@@ -1,0 +1,838 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>СТО АНТИКОР</title>
+
+    <link rel="stylesheet" href="libs/animate.css_4.1.1_animate.min.css">
+    <link rel="stylesheet" href="libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/gilroy.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/adaptive.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header__container">
+        <div class="logo header__logo">
+            <svg class="logo__svg" xmlns="http://www.w3.org/2000/svg" width="247" height="41" viewBox="0 0 247 41"
+                 fill="none">
+                <rect width="79" height="41" fill="#C60000"/>
+                <rect x="79" width="168" height="41" fill="black"/>
+                <path d="M100.51 32L99.082 27.716H89.596L88.168 32H83.102L91.432 8.2H97.246L105.61 32H100.51ZM91.092 23.33H97.62L94.356 13.606L91.092 23.33ZM122.643 8.2H127.301V32H122.643V22.14H113.803V32H109.111V8.2H113.803V17.652H122.643V8.2ZM148.654 8.2V12.688H142.228V32H137.536V12.688H131.144V8.2H148.654ZM166.234 32V17.482L156.034 32H152.464V8.2H157.156V22.752L167.356 8.2H170.926V32H166.234ZM195.129 32H189.723L181.223 20.848V32H176.531V8.2H181.223V18.706L189.383 8.2H194.789L185.983 19.76L195.129 32ZM216.639 28.906C214.236 31.286 211.312 32.476 207.867 32.476C204.422 32.476 201.498 31.286 199.095 28.906C196.715 26.5033 195.525 23.568 195.525 20.1C195.525 16.632 196.715 13.708 199.095 11.328C201.498 8.92533 204.422 7.724 207.867 7.724C211.312 7.724 214.236 8.92533 216.639 11.328C219.042 13.708 220.243 16.632 220.243 20.1C220.243 23.568 219.042 26.5033 216.639 28.906ZM202.393 25.71C203.866 27.1607 205.691 27.886 207.867 27.886C210.043 27.886 211.868 27.1607 213.341 25.71C214.814 24.2367 215.551 22.3667 215.551 20.1C215.551 17.8333 214.814 15.9633 213.341 14.49C211.868 13.0167 210.043 12.28 207.867 12.28C205.691 12.28 203.866 13.0167 202.393 14.49C200.92 15.9633 200.183 17.8333 200.183 20.1C200.183 22.3667 200.92 24.2367 202.393 25.71ZM233.605 8.2C235.894 8.2 237.821 8.97067 239.385 10.512C240.949 12.0533 241.731 13.946 241.731 16.19C241.731 18.434 240.949 20.3267 239.385 21.868C237.821 23.4093 235.894 24.18 233.605 24.18H229.423V32H224.731V8.2H233.605ZM233.605 19.794C234.602 19.794 235.43 19.454 236.087 18.774C236.744 18.0713 237.073 17.21 237.073 16.19C237.073 15.1473 236.744 14.286 236.087 13.606C235.43 12.926 234.602 12.586 233.605 12.586H229.423V19.794H233.605Z"
+                      fill="#E2ECF0"/>
+                <path d="M17.498 32.476C13.9167 32.476 10.9587 31.286 8.624 28.906C6.28933 26.526 5.122 23.5907 5.122 20.1C5.122 16.5867 6.28933 13.6513 8.624 11.294C10.9587 8.914 13.9167 7.724 17.498 7.724C19.6513 7.724 21.6347 8.234 23.448 9.254C25.284 10.2513 26.712 11.6113 27.732 13.334L23.686 15.68C23.0967 14.6147 22.258 13.7873 21.17 13.198C20.082 12.586 18.858 12.28 17.498 12.28C15.186 12.28 13.316 13.0053 11.888 14.456C10.4827 15.9067 9.78 17.788 9.78 20.1C9.78 22.3893 10.4827 24.2593 11.888 25.71C13.316 27.1607 15.186 27.886 17.498 27.886C18.858 27.886 20.082 27.5913 21.17 27.002C22.2807 26.39 23.1193 25.5627 23.686 24.52L27.732 26.866C26.712 28.5887 25.2953 29.96 23.482 30.98C21.6687 31.9773 19.674 32.476 17.498 32.476ZM47.4467 8.2V12.688H41.0207V32H36.3287V12.688H29.9367V8.2H47.4467ZM69.9207 28.906C67.518 31.286 64.594 32.476 61.1487 32.476C57.7034 32.476 54.7794 31.286 52.3767 28.906C49.9967 26.5033 48.8067 23.568 48.8067 20.1C48.8067 16.632 49.9967 13.708 52.3767 11.328C54.7794 8.92533 57.7034 7.724 61.1487 7.724C64.594 7.724 67.518 8.92533 69.9207 11.328C72.3234 13.708 73.5247 16.632 73.5247 20.1C73.5247 23.568 72.3234 26.5033 69.9207 28.906ZM55.6747 25.71C57.148 27.1607 58.9727 27.886 61.1487 27.886C63.3247 27.886 65.1494 27.1607 66.6227 25.71C68.096 24.2367 68.8327 22.3667 68.8327 20.1C68.8327 17.8333 68.096 15.9633 66.6227 14.49C65.1494 13.0167 63.3247 12.28 61.1487 12.28C58.9727 12.28 57.148 13.0167 55.6747 14.49C54.2014 15.9633 53.4647 17.8333 53.4647 20.1C53.4647 22.3667 54.2014 24.2367 55.6747 25.71Z"
+                      fill="#E2ECF0"/>
+            </svg>
+        </div>
+        <div class="header__nav-items">
+            <div class="header__nav-item" id="services">Услуги</div>
+            <div class="header__nav-item" id="reviews">Отзывы</div>
+            <div class="header__nav-item" id="contacts">Контакты</div>
+        </div>
+        <div class="header__nav-items2">
+            <div class="close">
+                <div id="close" class="close_cover">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1.76968 0.303612C1.36486 -0.101204 0.708519 -0.101204 0.3037 0.303613C-0.101118 0.70843 -0.101118 1.36477 0.3037 1.76958L6.53413 7.99999L0.303614 14.2305C-0.101205 14.6353 -0.101204 15.2916 0.303614 15.6964C0.708433 16.1013 1.36477 16.1013 1.76959 15.6964L8.00011 9.46596L14.2305 15.6963C14.6353 16.1011 15.2917 16.1011 15.6965 15.6963C16.1013 15.2915 16.1013 14.6352 15.6965 14.2303L9.46609 7.99999L15.6964 1.76971C16.1012 1.3649 16.1012 0.708557 15.6964 0.30374C15.2916 -0.101076 14.6352 -0.101077 14.2304 0.30374L8.00011 6.53401L1.76968 0.303612Z"
+                              fill="#E2ECF0"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="header__nav-item2" id="services2">Услуги</div>
+            <div class="header__nav-item2" id="reviews2">Отзывы</div>
+            <div class="header__nav-item2" id="contacts2">Контакты</div>
+        </div>
+        <div class="header__contacts">
+            <div class="phones__mts">
+                <div class="header__contacts__mts__num">+375 (29) 898 25 05</div>
+                <img src="imgs/MTC.png" alt="Значок МТС" class="provider-number">
+            </div>
+            <div class="phones__a1">
+                <div class="header__contacts__a1__num">+375 (44) 790 91 60</div>
+                <img src="imgs/A1.png" alt="Значок А1" class="provider-number">
+            </div>
+        </div>
+        <div id="burger" class="burger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 1C0 0.447715 0.447715 0 1 0H19C19.5523 0 20 0.447715 20 1C20 1.55228 19.5523 2 19 2H1C0.447715 2 0 1.55228 0 1ZM0 8C0 7.44772 0.447715 7 1 7H19C19.5523 7 20 7.44772 20 8C20 8.55229 19.5523 9 19 9H1C0.447715 9 0 8.55229 0 8ZM1 14C0.447715 14 0 14.4477 0 15C0 15.5523 0.447715 16 1 16H19C19.5523 16 20 15.5523 20 15C20 14.4477 19.5523 14 19 14H1Z"
+                      fill="#E2ECF0"/>
+            </svg>
+        </div>
+    </div>
+</header>
+
+<section class="start">
+    <div class="container start__container">
+        <div class="start__left-part wow animate__fadeIn">
+            <div class="start__left-part__title">
+                СТО Антикор - <span class="text__another-color">доверь</span> свой автомобиль <span
+                    class="text__another-color">профессионалам!</span>
+            </div>
+            <div class="start__left-part__text">
+                Мы оказываем <span class="text__another-color">большой спектр услуг</span>, в котором
+                вы <span class="text__another-color">обязательно</span> найдёте
+                то, что нужно именно <span class="text__another-color">вам</span>.
+            </div>
+            <div class="start__left-part__button">
+                <button type="button" class="start__left-part__button__btn" id="call_request">Заказать звонок</button>
+            </div>
+        </div>
+        <div class="start__right-part wow animate__fadeIn">
+            <div class="start__right-part__before">
+                <div class="start__right-part__before__text">До</div>
+                <div class="start__right-part__before__img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="59" height="48" viewBox="0 0 59 48" fill="none">
+                        <ellipse cx="4.95642" cy="4.96855" rx="4.95642" ry="4.96855"
+                                 transform="matrix(-1 0 0 1 58.9978 38.063)" fill="#FF6642" fill-opacity="0.9"/>
+                        <path d="M49.585 43.0315C49.585 45.5006 51.5813 47.5001 54.0414 47.5001C56.5014 47.5001 58.4978 45.5006 58.4978 43.0315C58.4978 40.5625 56.5014 38.563 54.0414 38.563C51.5813 38.563 49.585 40.5625 49.585 43.0315Z"
+                              stroke="#FF6642" stroke-opacity="0.9"/>
+                        <path d="M0.997803 9.52197C24.293 9.52197 50.9495 19.0555 53.737 38.3966" stroke="#FF6642"
+                              stroke-opacity="0.9"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="start__right-part__after">
+                <div class="start__right-part__after__img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="51" viewBox="0 0 60 51" fill="none">
+                        <ellipse cx="6.12616" cy="46.0567" rx="5.01801" ry="4.94338" fill="#FF6642" fill-opacity="0.9"/>
+                        <path d="M59.3171 9.81375C24.6925 9.81369 10.3108 22.1924 6.43441 41.4452" stroke="#FF6642"
+                              stroke-opacity="0.9"/>
+                    </svg>
+                </div>
+                <div class="start__right-part__after__text">После</div>
+            </div>
+            <div class="start__right-part__image">
+                <img src="imgs/start.png" alt="Картика до/после" class="start__right-part__image__img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<main class="main">
+    <section class="advantages">
+        <div class="container advantages__container">
+            <div class="advantages__title wow animate__fadeIn">Почему выбирают именно нас?</div>
+            <div class="advantages__cards">
+                <div class="advantages__cards__item wow animate__fadeInLeft">
+                    <div class="advantages__cards__item__image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="125" height="125" viewBox="0 0 125 125"
+                             fill="none">
+                            <circle cx="62.5" cy="62.5" r="59.5" stroke="#1E3044" stroke-width="6"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M43.6571 43.4968C41.8728 45.2637 40.4544 47.3674 39.4835 49.6868C38.5127 52.0061 38.0085 54.4953 38.0001 57.011C37.9917 59.5267 38.4792 62.0192 39.4346 64.345C40.39 66.6708 41.7943 68.784 43.5668 70.5628C45.3392 72.3417 47.4448 73.7511 49.7622 74.71C52.0797 75.6688 54.5632 76.1581 57.0698 76.1496C59.5765 76.1412 62.0567 75.6352 64.3677 74.6608C66.6786 73.6865 68.7748 72.2629 70.5353 70.4722C74.0602 66.8868 76.029 62.0478 76.0122 57.011C75.9954 51.9742 73.9943 47.1485 70.4456 43.5869C66.8968 40.0253 62.0885 38.017 57.0698 38.0001C52.0512 37.9832 47.2296 39.9592 43.6571 43.4968ZM65.649 65.5682C63.3806 67.8447 60.3041 69.1237 57.0962 69.1237C53.8883 69.1237 50.8118 67.8447 48.5434 65.5682C46.2751 63.2917 45.0008 60.204 45.0008 56.9845C45.0008 53.765 46.2751 50.6773 48.5434 48.4008C50.8118 46.1243 53.8883 44.8453 57.0962 44.8453C60.3041 44.8453 63.3806 46.1243 65.649 48.4008C67.9173 50.6773 69.1917 53.765 69.1917 56.9845C69.1917 60.204 67.9173 63.2917 65.649 65.5682Z"
+                                  fill="#1E3044"/>
+                            <path d="M66.8689 74.1519C66.3874 73.6687 66.0054 73.095 65.7449 72.4637C65.4843 71.8323 65.3502 71.1556 65.3502 70.4722C65.3502 69.7888 65.4843 69.1121 65.7449 68.4808C66.0054 67.8494 66.3874 67.2757 66.8689 66.7925C67.3503 66.3093 67.922 65.926 68.551 65.6644C69.1801 65.4029 69.8544 65.2683 70.5353 65.2683C71.2162 65.2683 71.8905 65.4029 72.5196 65.6644C73.1487 65.926 73.7203 66.3093 74.2018 66.7925L86.4176 79.0559C86.9126 79.5358 87.3075 80.1098 87.5792 80.7445C87.8509 81.3792 87.9938 82.0619 87.9998 82.7526C88.0058 83.4434 87.8747 84.1284 87.614 84.7677C87.3534 85.4071 86.9685 85.9879 86.4818 86.4763C85.9951 86.9648 85.4164 87.3511 84.7793 87.6127C84.1423 87.8742 83.4597 88.0059 82.7715 87.9999C82.0832 87.9939 81.403 87.8503 80.7706 87.5777C80.1382 87.3051 79.5663 86.9087 79.0881 86.4119L66.8689 74.1519Z"
+                                  fill="#1E3044"/>
+                        </svg>
+                    </div>
+                    <div class="advantages__cards__item__text">
+                        <div class="advantages__cards__item__text__title">Высокое качество</div>
+                        <div class="advantages__cards__item__text__body">Для антикоррозийной обработки мы используем
+                            только
+                            высококачественные составы WURTH и DINITROL
+                        </div>
+                    </div>
+                </div>
+                <div class="advantages__cards__item wow animate__fadeInRight">
+                    <div class="advantages__cards__item__image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="125" height="125" viewBox="0 0 125 125"
+                             fill="none">
+                            <circle cx="62.5" cy="62.5" r="59.5" stroke="#1E3044" stroke-width="6"/>
+                            <path d="M89.6553 66.215C87.5092 77.0256 79.4184 87.2049 68.0656 89.4795C62.5287 90.5904 56.785 89.9131 51.6524 87.5439C46.5197 85.1748 42.2599 81.2346 39.4793 76.2844C36.6987 71.3343 35.5392 65.6264 36.1658 59.9737C36.7924 54.321 39.1732 49.0116 42.9693 44.8014C50.7553 36.1615 63.9022 33.7832 74.6327 38.1074"
+                                  stroke="#1E3044" stroke-width="6.5625" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M53.2362 61.5191L64.0491 72.2883L90 44.2883" stroke="#1E3044" stroke-width="6.5625"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="advantages__cards__item__text">
+                        <div class="advantages__cards__item__text__title">Работа на совесть</div>
+                        <div class="advantages__cards__item__text__body">Продлеваем срок эксплуатации автомобиля и
+                            увеличиваем стоимость его продажи
+                        </div>
+                    </div>
+                </div>
+                <div class="advantages__cards__item wow animate__fadeInLeft">
+                    <div class="advantages__cards__item__image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="125" height="125" viewBox="0 0 125 125"
+                             fill="none">
+                            <circle cx="62.5" cy="62.5" r="59.5" stroke="#1E3044" stroke-width="6"/>
+                            <path d="M36.8182 87.1905H89.1818V93H36.8182V87.1905ZM89.1818 84.2857H36.8182L34.3367 51.7814C33.3946 51.3378 32.589 50.6498 32.004 49.7892C31.4191 48.9286 31.0762 47.9269 31.0113 46.8888C30.9464 45.8508 31.1618 44.8143 31.635 43.8877C32.1081 42.9611 32.8218 42.1784 33.7013 41.6212C34.5809 41.064 35.5942 40.7528 36.6353 40.7201C37.6764 40.6874 38.7073 40.9344 39.6202 41.4353C40.5331 41.9362 41.2945 42.6727 41.8251 43.5678C42.3557 44.4628 42.6358 45.4837 42.6364 46.5238C42.636 46.8157 42.6127 47.107 42.5665 47.3952L50.5287 53.7538L57.9818 40.723C57.4556 39.8422 57.1791 38.8351 57.1818 37.8095C57.1818 36.2687 57.7948 34.7911 58.8859 33.7016C59.977 32.6121 61.4569 32 63 32C64.5431 32 66.023 32.6121 67.1141 33.7016C68.2052 34.7911 68.8182 36.2687 68.8182 37.8095C68.8208 38.8364 68.5432 39.8446 68.0153 40.7259L75.4567 53.7538L83.4305 47.3923C83.3854 47.105 83.3631 46.8146 83.3636 46.5238C83.3642 45.4837 83.6443 44.4628 84.1749 43.5678C84.7055 42.6727 85.4669 41.9362 86.3798 41.4353C87.2927 40.9344 88.3236 40.6874 89.3647 40.7201C90.4058 40.7528 91.4191 41.064 92.2987 41.6212C93.1782 42.1784 93.8919 42.9611 94.365 43.8877C94.8382 44.8143 95.0536 45.8508 94.9887 46.8888C94.9238 47.9269 94.5809 48.9286 93.996 49.7892C93.411 50.6498 92.6054 51.3378 91.6633 51.7814L89.1818 84.2857ZM42.4036 78.4762H83.5964L85.72 53.0014L73.7753 62.5319L63 43.6684L52.2073 62.5319L40.28 53.0043L42.4036 78.4762Z"
+                                  fill="#1E3044"/>
+                        </svg>
+                    </div>
+                    <div class="advantages__cards__item__text">
+                        <div class="advantages__cards__item__text__title">Индивидуальность</div>
+                        <div class="advantages__cards__item__text__body">Мы обслуживаем все марки авто, а к каждому
+                            клиенту
+                            относимся с особым трепетом
+                        </div>
+                    </div>
+                </div>
+                <div class="advantages__cards__item wow animate__fadeInRight">
+                    <div class="advantages__cards__item__image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="125" height="125" viewBox="0 0 125 125"
+                             fill="none">
+                            <circle cx="62.5" cy="62.5" r="59.5" stroke="#1E3044" stroke-width="6"/>
+                            <g clip-path="url(#clip0_282_47)">
+                                <path d="M87 64.9962V54.995C87 53.6687 86.4778 52.3968 85.5483 51.459C84.6187 50.5212 83.358 49.9943 82.0435 49.9943H34.9565C33.642 49.9943 32.3813 50.5212 31.4517 51.459C30.5222 52.3968 30 53.6687 30 54.995V89.9994C30 91.3256 30.5222 92.5975 31.4517 93.5353C32.3813 94.4731 33.642 95 34.9565 95H82.0435C83.358 95 84.6187 94.4731 85.5483 93.5353C86.4778 92.5975 87 91.3256 87 89.9994V77.4978M46.5548 37.4928L74.6583 30.0918C74.9741 30.0021 75.3046 29.9778 75.63 30.0204C75.9553 30.0631 76.2687 30.1718 76.5513 30.3401C76.8339 30.5083 77.0797 30.7326 77.274 30.9993C77.4683 31.2661 77.607 31.5697 77.6817 31.8921L79.0696 37.4928"
+                                      stroke="#1E3044" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M93.4286 64.4917H80.5714C79.1513 64.4917 78 65.6558 78 67.0917V74.8917C78 76.3276 79.1513 77.4917 80.5714 77.4917H93.4286C94.8487 77.4917 96 76.3276 96 74.8917V67.0917C96 65.6558 94.8487 64.4917 93.4286 64.4917Z"
+                                      stroke="#1E3044" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_282_47">
+                                    <rect width="70" height="73" fill="white" transform="translate(27 25)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="advantages__cards__item__text">
+                        <div class="advantages__cards__item__text__title">Удобная оплата</div>
+                        <div class="advantages__cards__item__text__body">Наличный и безналичный расчёт. Рассрочка
+                            согласовывается в индивидуальном порядке
+                        </div>
+                    </div>
+                </div>
+                <div class="advantages__cards__item wow animate__fadeInLeft">
+                    <div class="advantages__cards__item__image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="125" height="125" viewBox="0 0 125 125"
+                             fill="none">
+                            <circle cx="62.5" cy="62.5" r="59.5" stroke="#1E3044" stroke-width="6"/>
+                            <path d="M86.9077 63.7273L91 67.8291L71.9123 87L61.7692 76.8182L65.8615 72.7164L71.9123 78.7673L86.9077 63.7273ZM57.3846 39C60.4856 39 63.4596 40.226 65.6523 42.4082C67.8451 44.5905 69.0769 47.5502 69.0769 50.6364C69.0769 53.7225 67.8451 56.6823 65.6523 58.8645C63.4596 61.0468 60.4856 62.2727 57.3846 62.2727C54.2836 62.2727 51.3096 61.0468 49.1169 58.8645C46.9242 56.6823 45.6923 53.7225 45.6923 50.6364C45.6923 47.5502 46.9242 44.5905 49.1169 42.4082C51.3096 40.226 54.2836 39 57.3846 39ZM57.3846 44.8182C55.8341 44.8182 54.3471 45.4312 53.2508 46.5223C52.1544 47.6134 51.5385 49.0933 51.5385 50.6364C51.5385 52.1794 52.1544 53.6593 53.2508 54.7504C54.3471 55.8416 55.8341 56.4545 57.3846 56.4545C58.9351 56.4545 60.4221 55.8416 61.5185 54.7504C62.6148 53.6593 63.2308 52.1794 63.2308 50.6364C63.2308 49.0933 62.6148 47.6134 61.5185 46.5223C60.4221 45.4312 58.9351 44.8182 57.3846 44.8182ZM57.3846 65.1818C59.3723 65.1818 61.7692 65.4436 64.4292 65.9382L59.5477 70.7964L57.3846 70.7091C48.7031 70.7091 39.5538 74.9564 39.5538 76.8182V80.0182H57.6769L63.2308 85.5455H34V76.8182C34 69.08 49.58 65.1818 57.3846 65.1818Z"
+                                  fill="#1E3044"/>
+                        </svg>
+                    </div>
+                    <div class="advantages__cards__item__text">
+                        <div class="advantages__cards__item__text__title">Опытные мастера</div>
+                        <div class="advantages__cards__item__text__body">Работы по защите от коррозии проводятся по
+                            оригинальным карт-схемам
+                        </div>
+                    </div>
+                </div>
+                <div class="advantages__cards__item wow animate__fadeInRight">
+                    <div class="advantages__cards__item__image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="125" height="125" viewBox="0 0 125 125"
+                             fill="none">
+                            <circle cx="62.5" cy="62.5" r="59.5" stroke="#1E3044" stroke-width="6"/>
+                            <path d="M83.3636 51.4V45.6H77.5455V39.8H83.3636V34H89.1818V39.8H95V45.6H89.1818V51.4H83.3636ZM36.8182 92C35.2182 92 33.848 91.4316 32.7076 90.2948C31.5673 89.158 30.9981 87.7931 31 86.2V51.4C31 49.805 31.5702 48.4391 32.7106 47.3023C33.8509 46.1655 35.2201 45.5981 36.8182 45.6H45.9818L51.3636 39.8H68.8182V45.6H53.9091L48.6 51.4H36.8182V86.2H83.3636V60.1H89.1818V86.2C89.1818 87.795 88.6116 89.1609 87.4713 90.2977C86.3309 91.4345 84.9617 92.0019 83.3636 92H36.8182ZM60.0909 81.85C63.7273 81.85 66.8187 80.5808 69.3651 78.0423C71.9115 75.5038 73.1838 72.4231 73.1818 68.8C73.1818 65.175 71.9086 62.0933 69.3622 59.5548C66.8158 57.0163 63.7253 55.7481 60.0909 55.75C56.4545 55.75 53.3632 57.0192 50.8167 59.5577C48.2703 62.0962 46.9981 65.1769 47 68.8C47 72.425 48.2732 75.5067 50.8196 78.0452C53.3661 80.5837 56.4565 81.8519 60.0909 81.85ZM60.0909 76.05C58.0546 76.05 56.3333 75.3492 54.9273 73.9475C53.5212 72.5458 52.8182 70.83 52.8182 68.8C52.8182 66.77 53.5212 65.0542 54.9273 63.6525C56.3333 62.2508 58.0546 61.55 60.0909 61.55C62.1273 61.55 63.8485 62.2508 65.2545 63.6525C66.6606 65.0542 67.3636 66.77 67.3636 68.8C67.3636 70.83 66.6606 72.5458 65.2545 73.9475C63.8485 75.3492 62.1273 76.05 60.0909 76.05Z"
+                                  fill="#1E3044"/>
+                        </svg>
+                    </div>
+                    <div class="advantages__cards__item__text">
+                        <div class="advantages__cards__item__text__title">Фото и видеоотчёт</div>
+                        <div class="advantages__cards__item__text__body">Присылаем вам фото и видеоподтверждение после
+                            каждого этапа работ
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="service" class="services">
+        <div class="container services__container">
+            <div class="services__title wow animate__fadeIn">
+                Наши услуги
+            </div>
+            <div class="services__points wow animate__fadeIn">
+                <div class="services__points__item wow animate__fadeIn">
+                    <div class="services__points__item__circle">
+                        <div class="services__points__item__circle_black"></div>
+                    </div>
+                    <div class="services__points__item__text">
+                        Антикоррозийная обработка легковых и грузовых автомобилей, микроавтобусов и автобусов, прицепов
+                        и
+                        п/прицепов
+                    </div>
+                </div>
+                <div class="services__points__item wow animate__fadeIn">
+                    <div class="services__points__item__circle">
+                        <div class="services__points__item__circle_black"></div>
+                    </div>
+                    <div class="services__points__item__text">
+                        Пескоструйная обработка
+                    </div>
+                </div>
+                <div class="services__points__item wow animate__fadeIn">
+                    <div class="services__points__item__circle">
+                        <div class="services__points__item__circle_black"></div>
+                    </div>
+                    <div class="services__points__item__text">
+                        Сварочные работы: переварка порогов, арок и днищ
+                    </div>
+                </div>
+                <div class="services__points__item wow animate__fadeIn">
+                    <div class="services__points__item__circle">
+                        <div class="services__points__item__circle_black"></div>
+                    </div>
+                    <div class="services__points__item__text">
+                        Проведение Технического Обслуживания автомобилей и холодильно-обогревательного обородования
+                        (ХОУ)
+                    </div>
+                </div>
+                <div class="services__points__item wow animate__fadeIn">
+                    <div class="services__points__item__circle">
+                        <div class="services__points__item__circle_black"></div>
+                    </div>
+                    <div class="services__points__item__text">
+                        Мелкосрочные слесарные работы
+                    </div>
+                </div>
+                <div class="services__points__item wow animate__fadeIn">
+                    <div class="services__points__item__circle">
+                        <div class="services__points__item__circle_black"></div>
+                    </div>
+                    <div class="services__points__item__text">
+                        Ремонт глушителей
+                    </div>
+                </div>
+                <div class="services__points__item wow animate__fadeIn">
+                    <div class="services__points__item__circle">
+                        <div class="services__points__item__circle_black"></div>
+                    </div>
+                    <div class="services__points__item__text">
+                        Покраска дисков
+                    </div>
+                </div>
+                <div class="services__points__item wow animate__fadeIn">
+                    <div class="services__points__item__circle">
+                        <div class="services__points__item__circle_black"></div>
+                    </div>
+                    <div class="services__points__item__text">
+                        Заправка кондиционеров
+                    </div>
+                </div>
+            </div>
+            <div class="services__clarify wow animate__fadeIn">
+                Стоимость уточняйте по телефонам либо у мастера
+            </div>
+        </div>
+    </section>
+
+    <section id="feedback" class="feedback">
+        <div class="container feedback__container">
+            <div class="feedback__title wow animate__fadeIn">Отзывы наших клиентов</div>
+            <input class="card1 card__input" type="radio" name="slider" id="item-1">
+            <input class="card2 card__input" type="radio" name="slider" id="item-2" checked>
+            <input class="card3 card__input" type="radio" name="slider" id="item-3">
+            <div class="cards wow animate__fadeIn">
+                <label class="card" for="item-1" id="song-1">
+                    <div class="feedback__cards__item">
+                        <div class="feedback__cards__item__name">Женя Стольный</div>
+                        <div class="feedback__cards__item__hr"></div>
+                        <div class="feedback__cards__item__date">4 июня 2023 года</div>
+                        <div class="feedback__cards__item__text">Сделали всё хорошо, быстро,и не дорого</div>
+                        <div class="feedback__cards__item__info">Информация взята с Google Maps</div>
+                        <div class="feedback__cards__item__stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="90" height="10" viewBox="0 0 90 10"
+                                 fill="none">
+                                <mask id="mask0_194_1243" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                      width="90" height="10">
+                                    <path d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z"
+                                          fill="#D9D9D9"/>
+                                    <path d="M25 0L26.1226 3.45492H29.7553L26.8164 5.59017L27.9389 9.04508L25 6.90983L22.0611 9.04508L23.1836 5.59017L20.2447 3.45492H23.8774L25 0Z"
+                                          fill="#D9D9D9"/>
+                                    <path d="M45 0L46.1226 3.45492H49.7553L46.8164 5.59017L47.9389 9.04508L45 6.90983L42.0611 9.04508L43.1836 5.59017L40.2447 3.45492H43.8774L45 0Z"
+                                          fill="#D9D9D9"/>
+                                    <path d="M65 0L66.1226 3.45492H69.7553L66.8164 5.59017L67.9389 9.04508L65 6.90983L62.0611 9.04508L63.1836 5.59017L60.2447 3.45492H63.8774L65 0Z"
+                                          fill="#D9D9D9"/>
+                                    <path d="M85 0L86.1226 3.45492H89.7553L86.8164 5.59017L87.9389 9.04508L85 6.90983L82.0611 9.04508L83.1836 5.59017L80.2447 3.45492H83.8774L85 0Z"
+                                          fill="#D9D9D9"/>
+                                </mask>
+                                <g mask="url(#mask0_194_1243)">
+                                    <path d="M0 0H90V9H0V0Z" fill="#1E3044"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </label>
+                <label class="card" for="item-2" id="song-2">
+                    <div class="feedback__cards__item">
+                        <div class="feedback__cards__item__name">Михаил Нагар</div>
+                        <div class="feedback__cards__item__hr"></div>
+                        <div class="feedback__cards__item__date">23 января 2023 года</div>
+                        <div class="feedback__cards__item__text">
+                            <div class="feedback__cards__item__text_1">Искал где сделать антикоррозийную обработку
+                                недорого.
+                            </div>
+                            <div class="feedback__cards__item__text_2">Нашёл в этом месте.</div>
+                            <div class="feedback__cards__item__text_2">Как оказалось, ребята недавно открылись - и это
+                                плюс -
+                                привлекают к себе клиентов
+                                и внимательным отношением и невысокой стоимостью работ.
+                            </div>
+                            Желаю им успеха и развития.
+                        </div>
+                        <div class="feedback__cards__item__info">Информация взята с Google Maps</div>
+                        <div class="feedback__cards__item__stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="90" height="10" viewBox="0 0 90 10"
+                                 fill="none">
+                                <mask id="mask0_194_1243" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                      width="90" height="10">
+                                    <path d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z"
+                                          fill="#D9D9D9"/>
+                                    <path d="M25 0L26.1226 3.45492H29.7553L26.8164 5.59017L27.9389 9.04508L25 6.90983L22.0611 9.04508L23.1836 5.59017L20.2447 3.45492H23.8774L25 0Z"
+                                          fill="#D9D9D9"/>
+                                    <path d="M45 0L46.1226 3.45492H49.7553L46.8164 5.59017L47.9389 9.04508L45 6.90983L42.0611 9.04508L43.1836 5.59017L40.2447 3.45492H43.8774L45 0Z"
+                                          fill="#D9D9D9"/>
+                                    <path d="M65 0L66.1226 3.45492H69.7553L66.8164 5.59017L67.9389 9.04508L65 6.90983L62.0611 9.04508L63.1836 5.59017L60.2447 3.45492H63.8774L65 0Z"
+                                          fill="#D9D9D9"/>
+                                    <path d="M85 0L86.1226 3.45492H89.7553L86.8164 5.59017L87.9389 9.04508L85 6.90983L82.0611 9.04508L83.1836 5.59017L80.2447 3.45492H83.8774L85 0Z"
+                                          fill="#D9D9D9"/>
+                                </mask>
+                                <g mask="url(#mask0_194_1243)">
+                                    <path d="M0 0H90V9H0V0Z" fill="#1E3044"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </label>
+                <label class="card" for="item-3" id="song-3">
+                    <div class="feedback__cards__item">
+                        <div class="feedback__cards__item__name">Анна Кабишева</div>
+                        <div class="feedback__cards__item__hr"></div>
+                        <div class="feedback__cards__item__date">6 марта 2023 года</div>
+                        <div class="feedback__cards__item__text">Очень понравилось, сделали быстро и по записи.</div>
+                        <div class="feedback__cards__item__info">Информация взята с Google Maps</div>
+                        <div class="feedback__cards__item__stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="90" height="10" viewBox="0 0 90 10"
+                                 fill="none">
+                                <mask id="mask0_194_1243" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                      width="90" height="10">
+                                    <path d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z"
+                                          fill="#D9D9D9"/>
+                                    <path d="M25 0L26.1226 3.45492H29.7553L26.8164 5.59017L27.9389 9.04508L25 6.90983L22.0611 9.04508L23.1836 5.59017L20.2447 3.45492H23.8774L25 0Z"
+                                          fill="#D9D9D9"/>
+                                    <path d="M45 0L46.1226 3.45492H49.7553L46.8164 5.59017L47.9389 9.04508L45 6.90983L42.0611 9.04508L43.1836 5.59017L40.2447 3.45492H43.8774L45 0Z"
+                                          fill="#D9D9D9"/>
+                                    <path d="M65 0L66.1226 3.45492H69.7553L66.8164 5.59017L67.9389 9.04508L65 6.90983L62.0611 9.04508L63.1836 5.59017L60.2447 3.45492H63.8774L65 0Z"
+                                          fill="#D9D9D9"/>
+                                    <path d="M85 0L86.1226 3.45492H89.7553L86.8164 5.59017L87.9389 9.04508L85 6.90983L82.0611 9.04508L83.1836 5.59017L80.2447 3.45492H83.8774L85 0Z"
+                                          fill="#D9D9D9"/>
+                                </mask>
+                                <g mask="url(#mask0_194_1243)">
+                                    <path d="M0 0H90V9H0V0Z" fill="#1E3044"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </label>
+            </div>
+            <div class="slider__points feedback__slider__points">
+                <div class="points slider__points__item1"></div>
+                <div class="points slider__points__item1 active__point"></div>
+                <div class="points slider__points__item1"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mechanic__image">
+        <img src="imgs/mechanic.png" alt="Механик" class="mechanic__image__img">
+    </section>
+
+    <section class="what-is-this">
+        <div class="container what-is-this__container">
+            <div class="what-is-this__title wow animate__fadeIn">Что такое антикоррозийная обработка и почему она важна
+                для вашего
+                автомобиля?
+            </div>
+            <div class="what-is-this__main wow animate__fadeIn">
+                <div class="what-is-this__main__item">
+                    <div class="what-is-this__main__item__num">1</div>
+                    <div class="what-is-this__main__item__text">Антикоррозийная обработка - это процесс защиты
+                        металлических
+                        деталей автомобиля от коррозии, которая может возникнуть из-за воздействия влаги, соли на
+                        дорогах,
+                        агрессивных химических веществ и других факторов, которые характерны для нашего климата.
+                    </div>
+                </div>
+                <div class="what-is-this__main__item">
+                    <div class="what-is-this__main__item__num">2</div>
+                    <div class="what-is-this__main__item__text">Для проведения антикоррозийной обработки используются
+                        специальные составы, которые наносятся на поверхность металла. Эти составы создают защитный
+                        слой,
+                        который, в свою очередь, предотвращает проникновение влаги и других вредных веществ в металл.
+                        Также
+                        антикоррозийные составы могут содержать добавки, улучшающие адгезию к поверхности и
+                        увеличивающие
+                        срок службы защитного слоя вашего автомобиля.
+                    </div>
+                </div>
+                <div class="what-is-this__main__item">
+                    <div class="what-is-this__main__item__num">3</div>
+                    <div class="what-is-this__main__item__text">Без такой обработки металлические детали автомобиля
+                        могут
+                        быстро портиться, что приведет к уменьшению прочности конструкции и проблемам с безопасностью на
+                        дороге.
+                    </div>
+                </div>
+            </div>
+            <div class="what-is-this__short wow animate__fadeIn">А если вкратце?</div>
+            <div class="what-is-this__short-text wow animate__fadeIn">Антикоррозийная обработка необходима для
+                сохранения кузова автомобиля
+                в
+                хорошем состоянии и увеличения его срока службы, также проведение этого вида работ способствует
+                увеличению
+                стоимости продажи автомобиля.
+            </div>
+        </div>
+    </section>
+
+    <section class="stages">
+        <div class="container stages__container">
+            <div class="stages__title wow animate__fadeIn">
+                Этапы антикоррозийной обработки
+            </div>
+            <div class="stages__block">
+                <div class="stages__block-title wow animate__fadeIn">
+                    Базовая обработка легкового авто
+                </div>
+                <div class="stages__items">
+                    <div class="stages__item wow animate__fadeIn">
+                        <div class="stages__item__circle">
+                            <div class="stages__item__circle_black"></div>
+                        </div>
+                        <div class="stages__item__text">
+                            Снятие и установка защиты колесных арок
+                        </div>
+                    </div>
+                    <div class="stages__item wow animate__fadeIn">
+                        <div class="stages__item__circle">
+                            <div class="stages__item__circle_black"></div>
+                        </div>
+                        <div class="stages__item__text">
+                            Снятие пластиковых защитных панелей дна автомобиля
+                        </div>
+                    </div>
+                    <div class="stages__item wow animate__fadeIn">
+                        <div class="stages__item__circle">
+                            <div class="stages__item__circle_black"></div>
+                        </div>
+                        <div class="stages__item__text">
+                            Снятие и установка тепловых защит дна автомобиля
+                        </div>
+                    </div>
+                    <div class="stages__item wow animate__fadeIn">
+                        <div class="stages__item__circle">
+                            <div class="stages__item__circle_black"></div>
+                        </div>
+                        <div class="stages__item__text">
+                            Мойка на подъемнике аппаратом высокого давления и специальной химией
+                        </div>
+                    </div>
+                    <div class="stages__item wow animate__fadeIn">
+                        <div class="stages__item__circle">
+                            <div class="stages__item__circle_black"></div>
+                        </div>
+                        <div class="stages__item__text">
+                            Сушка автомобиля (в зимний период в теплом боксе и инфракрасными нагревателями)
+                        </div>
+                    </div>
+                    <div class="stages__item wow animate__fadeIn">
+                        <div class="stages__item__circle">
+                            <div class="stages__item__circle_black"></div>
+                        </div>
+                        <div class="stages__item__text">
+                            Оклейка кузова автомобиля малярной пленкой и защитной бумагой
+                        </div>
+                    </div>
+                    <div class="stages__item wow animate__fadeIn">
+                        <div class="stages__item__circle">
+                            <div class="stages__item__circle_black"></div>
+                        </div>
+                        <div class="stages__item__text">
+                            Антикор обработка битум-каучуковой смесью европейского производства
+                        </div>
+                    </div>
+                    <div class="stages__item wow animate__fadeIn">
+                        <div class="stages__item__circle">
+                            <div class="stages__item__circle_black"></div>
+                        </div>
+                        <div class="stages__item__text">
+                            Сушка покрытия
+                        </div>
+                    </div>
+                    <div class="stages__item wow animate__fadeIn">
+                        <div class="stages__item__circle">
+                            <div class="stages__item__circle_black"></div>
+                        </div>
+                        <div class="stages__item__text">
+                            Сборка
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stages__block">
+                <div class="stages__block-title wow animate__fadeIn">
+                    Обработка скрытых полостей дна автомобиля
+                </div>
+                <div class="stages__items">
+                    <div class="stages__item wow animate__fadeIn">
+                        <div class="stages__item__circle">
+                            <div class="stages__item__circle_black"></div>
+                        </div>
+                        <div class="stages__item__text">
+                            Снятие заглушек скрытых полостей
+                        </div>
+                    </div>
+                    <div class="stages__item wow animate__fadeIn">
+                        <div class="stages__item__circle">
+                            <div class="stages__item__circle_black"></div>
+                        </div>
+                        <div class="stages__item__text">
+                            Обдув полостей высоким давлением воздуха (при возможности мойка и сушка скрытых полостей)
+                        </div>
+                    </div>
+                    <div class="stages__item wow animate__fadeIn">
+                        <div class="stages__item__circle">
+                            <div class="stages__item__circle_black"></div>
+                        </div>
+                        <div class="stages__item__text">
+                            Обработка гидрофобным антикоррозийным составом скрытых полостей, нагретым до температуры 50
+                            градусов, с помощью удлинителя, через технологические отверстия
+                        </div>
+                    </div>
+                    <div class="stages__item wow animate__fadeIn">
+                        <div class="stages__item__circle">
+                            <div class="stages__item__circle_black"></div>
+                        </div>
+                        <div class="stages__item__text">
+                            Установка заглушек
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stages__block">
+                <div class="stages__block-title wow animate__fadeIn">
+                    Обработка дверей, крышки капота и крышки багажника
+                </div>
+                <div class="stages__items">
+                    <div class="stages__item wow animate__fadeIn">
+                        <div class="stages__item__circle">
+                            <div class="stages__item__circle_black"></div>
+                        </div>
+                        <div class="stages__item__text">
+                            Обработка через технологические отверстия бесцветным составом нижней части дверей, крышки
+                            багажника, и скрытых полостей капота
+                        </div>
+                    </div>
+                    <div class="stages__item wow animate__fadeIn">
+                        <div class="stages__item__circle">
+                            <div class="stages__item__circle_black"></div>
+                        </div>
+                        <div class="stages__item__text">
+                            Удаление излишков материала на поверхности
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stages__clarify wow animate__fadeIn">
+                Автомобили старше 4-х лет чаще всего требует абразивных работ по удалению очагов ржавчины, с последующим
+                покрытие кислотными или эпоксидными грунтами. Очаг ржавчины зачищается мягкими металлическими щётками
+                с использованием дремеля, а потом пескоструем доводят поверхность до открытого чистого метала.
+                Труднодоступных местах используется преобразователь и консервант WURTH. Именно такая подготовка способна
+                защитить автомобиль от поcледующего развития коррозии. Время работ: от 2 дней (разборка, мойка — 4 часа,
+                сушка — 16 часов, обработка, сушка и сборка — 6 часов)
+            </div>
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="container">
+            <div class="form__left-image">
+                <img src="imgs/firstForm.png" alt="" class="form__left-image__img">
+            </div>
+            <div class="form__another-image-form">
+                <img src="imgs/anotherImageForm.png" alt="" class="form__another-image-form__img">
+            </div>
+            <div class="container form__container">
+                <div class="form__main">
+                    <div class="form__main__title">
+                        Нуждаетесь в консультации?
+                        Оформите заявку, а <span class="text__another-color">мы</span> <span
+                            class="text__another-color">вам перезвоним!</span>
+                    </div>
+                    <div class="form__main__main">
+                        <div class="form__main__main__fields">
+                            <input placeholder="Ваше имя" type="text" class="input name">
+                            <input placeholder="Ваш номер" type="text" class="input number">
+                        </div>
+                        <div class="form__main__main__button">
+                            <button type="button" class="form__main__main__button__btn">Заказать звонок</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form__right-image">
+                <img src="imgs/secondForm.png" alt="" class="form__right-image__img">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="photo">
+        <div class="photo__title wow animate__fadeIn">Наша фотогалерея</div>
+        <div class="container">
+            <div class="photo__container swiper wow animate__fadeIn">
+                <div class="photo__slider swiper-wrapper">
+                    <div class="photo__slider__photo swiper-slide">
+                        <img class="gallery-image" src="imgs/gallery/1.png" alt="">
+                    </div>
+                    <div class="photo__slider__photo swiper-slide">
+                        <img class="gallery-image" src="imgs/gallery/2.png" alt="">
+                    </div>
+                    <div class="photo__slider__photo swiper-slide">
+                        <img class="gallery-image" src="imgs/gallery/3.png" alt="">
+                    </div>
+                    <div class="photo__slider__photo swiper-slide">
+                        <img class="gallery-image" src="imgs/gallery/4.png" alt="">
+                    </div>
+                    <div class="photo__slider__photo swiper-slide">
+                        <img class="gallery-image" src="imgs/gallery/5.png" alt="">
+                    </div>
+                    <div class="photo__slider__photo swiper-slide">
+                        <img class="gallery-image" src="imgs/gallery/6.png" alt="">
+                    </div>
+                    <div class="photo__slider__photo swiper-slide">
+                        <img class="gallery-image" src="imgs/gallery/7.png" alt="">
+                    </div>
+                    <div class="photo__slider__photo swiper-slide">
+                        <img class="gallery-image" src="imgs/gallery/8.png" alt="">
+                    </div>
+                    <div class="photo__slider__photo swiper-slide">
+                        <img class="gallery-image" src="imgs/gallery/9.png" alt="">
+                    </div>
+                    <div class="photo__slider__photo swiper-slide">
+                        <img class="gallery-image" src="imgs/gallery/10.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="slider__points">
+                    <div class="points slider__points__item2 active__point"></div>
+                    <div class="points slider__points__item2"></div>
+                    <div class="points slider__points__item2"></div>
+                    <div class="points slider__points__item2"></div>
+                    <div class="points slider__points__item2"></div>
+                    <div class="points slider__points__item2"></div>
+                    <div class="points slider__points__item2"></div>
+                    <div class="points slider__points__item2"></div>
+                    <div class="points slider__points__item2"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="map" class="map">
+        <div class="map__container">
+            <div class="map__second__title">Наши контакты</div>
+            <div class="map__map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A98748470f106f1fe4126f8a6f68ca8e7091545b8cca001c738169271cafacd30&amp;source=constructor"
+                        width="100%" height="640" frameborder="0"></iframe>
+                <div class="map__address">
+                    <div class="map__address__title">Наши контакты</div>
+                    <div class="map__address__graphic">
+                        <div class="map__address__post-title">Режим работы:</div>
+                        <div class="map-text graphic to-fr">Пн - пт: c 09:00 до 18:00</div>
+                        <div class="map-text graphic sat">Сб: с 9:00 до 16:00</div>
+                        <div class="map-text graphic sun">Вс: по записи</div>
+                    </div>
+                    <div class="map__address__phones">
+                        <div class="map__address__post-title">Телефоны:</div>
+                        <div class="phones__mts">
+                            <div class="map-text map__address__phones__mts__num">+375 (29) 898 25 05</div>
+                            <img src="imgs/MTC.png" alt="Значок МТС" class="provider-number">
+                        </div>
+                        <div class="phones__a1">
+                            <div class="map-text map__address__phones__a1__num">+375 (44) 790 91 60</div>
+                            <img src="imgs/A1.png" alt="Значок А1" class="provider-number">
+                        </div>
+                    </div>
+                    <div class="map__address__address">
+                        <div class="map__address__post-title">Адрес:</div>
+                        <div class="map-text map__address__address__text1">г. Витебск, ул. Лазо, 115</div>
+                        <div class="map-text map__address__address__text2">(напротив Витебской таможни)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<div class="vector_1"></div>
+<div class="vector_2"></div>
+<div class="vector_3"></div>
+<div class="vector_4"></div>
+<div class="vector_5"></div>
+<div class="vector_6"></div>
+<div class="vector_7"></div>
+<div class="vector_8"></div>
+
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__logo">
+            <svg class="logo__svg1" xmlns="http://www.w3.org/2000/svg" width="198" height="33" viewBox="0 0 247 41"
+                 fill="none">
+                <rect width="79" height="41" fill="#C60000"/>
+                <rect x="79" width="168" height="41" fill="black"/>
+                <path d="M100.51 32L99.082 27.716H89.596L88.168 32H83.102L91.432 8.2H97.246L105.61 32H100.51ZM91.092 23.33H97.62L94.356 13.606L91.092 23.33ZM122.643 8.2H127.301V32H122.643V22.14H113.803V32H109.111V8.2H113.803V17.652H122.643V8.2ZM148.654 8.2V12.688H142.228V32H137.536V12.688H131.144V8.2H148.654ZM166.234 32V17.482L156.034 32H152.464V8.2H157.156V22.752L167.356 8.2H170.926V32H166.234ZM195.129 32H189.723L181.223 20.848V32H176.531V8.2H181.223V18.706L189.383 8.2H194.789L185.983 19.76L195.129 32ZM216.639 28.906C214.236 31.286 211.312 32.476 207.867 32.476C204.422 32.476 201.498 31.286 199.095 28.906C196.715 26.5033 195.525 23.568 195.525 20.1C195.525 16.632 196.715 13.708 199.095 11.328C201.498 8.92533 204.422 7.724 207.867 7.724C211.312 7.724 214.236 8.92533 216.639 11.328C219.042 13.708 220.243 16.632 220.243 20.1C220.243 23.568 219.042 26.5033 216.639 28.906ZM202.393 25.71C203.866 27.1607 205.691 27.886 207.867 27.886C210.043 27.886 211.868 27.1607 213.341 25.71C214.814 24.2367 215.551 22.3667 215.551 20.1C215.551 17.8333 214.814 15.9633 213.341 14.49C211.868 13.0167 210.043 12.28 207.867 12.28C205.691 12.28 203.866 13.0167 202.393 14.49C200.92 15.9633 200.183 17.8333 200.183 20.1C200.183 22.3667 200.92 24.2367 202.393 25.71ZM233.605 8.2C235.894 8.2 237.821 8.97067 239.385 10.512C240.949 12.0533 241.731 13.946 241.731 16.19C241.731 18.434 240.949 20.3267 239.385 21.868C237.821 23.4093 235.894 24.18 233.605 24.18H229.423V32H224.731V8.2H233.605ZM233.605 19.794C234.602 19.794 235.43 19.454 236.087 18.774C236.744 18.0713 237.073 17.21 237.073 16.19C237.073 15.1473 236.744 14.286 236.087 13.606C235.43 12.926 234.602 12.586 233.605 12.586H229.423V19.794H233.605Z"
+                      fill="#E2ECF0"/>
+                <path d="M17.498 32.476C13.9167 32.476 10.9587 31.286 8.624 28.906C6.28933 26.526 5.122 23.5907 5.122 20.1C5.122 16.5867 6.28933 13.6513 8.624 11.294C10.9587 8.914 13.9167 7.724 17.498 7.724C19.6513 7.724 21.6347 8.234 23.448 9.254C25.284 10.2513 26.712 11.6113 27.732 13.334L23.686 15.68C23.0967 14.6147 22.258 13.7873 21.17 13.198C20.082 12.586 18.858 12.28 17.498 12.28C15.186 12.28 13.316 13.0053 11.888 14.456C10.4827 15.9067 9.78 17.788 9.78 20.1C9.78 22.3893 10.4827 24.2593 11.888 25.71C13.316 27.1607 15.186 27.886 17.498 27.886C18.858 27.886 20.082 27.5913 21.17 27.002C22.2807 26.39 23.1193 25.5627 23.686 24.52L27.732 26.866C26.712 28.5887 25.2953 29.96 23.482 30.98C21.6687 31.9773 19.674 32.476 17.498 32.476ZM47.4467 8.2V12.688H41.0207V32H36.3287V12.688H29.9367V8.2H47.4467ZM69.9207 28.906C67.518 31.286 64.594 32.476 61.1487 32.476C57.7034 32.476 54.7794 31.286 52.3767 28.906C49.9967 26.5033 48.8067 23.568 48.8067 20.1C48.8067 16.632 49.9967 13.708 52.3767 11.328C54.7794 8.92533 57.7034 7.724 61.1487 7.724C64.594 7.724 67.518 8.92533 69.9207 11.328C72.3234 13.708 73.5247 16.632 73.5247 20.1C73.5247 23.568 72.3234 26.5033 69.9207 28.906ZM55.6747 25.71C57.148 27.1607 58.9727 27.886 61.1487 27.886C63.3247 27.886 65.1494 27.1607 66.6227 25.71C68.096 24.2367 68.8327 22.3667 68.8327 20.1C68.8327 17.8333 68.096 15.9633 66.6227 14.49C65.1494 13.0167 63.3247 12.28 61.1487 12.28C58.9727 12.28 57.148 13.0167 55.6747 14.49C54.2014 15.9633 53.4647 17.8333 53.4647 20.1C53.4647 22.3667 54.2014 24.2367 55.6747 25.71Z"
+                      fill="#E2ECF0"/>
+            </svg>
+            <svg class="logo__svg2" xmlns="http://www.w3.org/2000/svg" width="100" height="17" viewBox="0 0 247 41"
+                 fill="none">
+                <rect width="79" height="41" fill="#C60000"/>
+                <rect x="79" width="168" height="41" fill="black"/>
+                <path d="M100.51 32L99.082 27.716H89.596L88.168 32H83.102L91.432 8.2H97.246L105.61 32H100.51ZM91.092 23.33H97.62L94.356 13.606L91.092 23.33ZM122.643 8.2H127.301V32H122.643V22.14H113.803V32H109.111V8.2H113.803V17.652H122.643V8.2ZM148.654 8.2V12.688H142.228V32H137.536V12.688H131.144V8.2H148.654ZM166.234 32V17.482L156.034 32H152.464V8.2H157.156V22.752L167.356 8.2H170.926V32H166.234ZM195.129 32H189.723L181.223 20.848V32H176.531V8.2H181.223V18.706L189.383 8.2H194.789L185.983 19.76L195.129 32ZM216.639 28.906C214.236 31.286 211.312 32.476 207.867 32.476C204.422 32.476 201.498 31.286 199.095 28.906C196.715 26.5033 195.525 23.568 195.525 20.1C195.525 16.632 196.715 13.708 199.095 11.328C201.498 8.92533 204.422 7.724 207.867 7.724C211.312 7.724 214.236 8.92533 216.639 11.328C219.042 13.708 220.243 16.632 220.243 20.1C220.243 23.568 219.042 26.5033 216.639 28.906ZM202.393 25.71C203.866 27.1607 205.691 27.886 207.867 27.886C210.043 27.886 211.868 27.1607 213.341 25.71C214.814 24.2367 215.551 22.3667 215.551 20.1C215.551 17.8333 214.814 15.9633 213.341 14.49C211.868 13.0167 210.043 12.28 207.867 12.28C205.691 12.28 203.866 13.0167 202.393 14.49C200.92 15.9633 200.183 17.8333 200.183 20.1C200.183 22.3667 200.92 24.2367 202.393 25.71ZM233.605 8.2C235.894 8.2 237.821 8.97067 239.385 10.512C240.949 12.0533 241.731 13.946 241.731 16.19C241.731 18.434 240.949 20.3267 239.385 21.868C237.821 23.4093 235.894 24.18 233.605 24.18H229.423V32H224.731V8.2H233.605ZM233.605 19.794C234.602 19.794 235.43 19.454 236.087 18.774C236.744 18.0713 237.073 17.21 237.073 16.19C237.073 15.1473 236.744 14.286 236.087 13.606C235.43 12.926 234.602 12.586 233.605 12.586H229.423V19.794H233.605Z"
+                      fill="#E2ECF0"/>
+                <path d="M17.498 32.476C13.9167 32.476 10.9587 31.286 8.624 28.906C6.28933 26.526 5.122 23.5907 5.122 20.1C5.122 16.5867 6.28933 13.6513 8.624 11.294C10.9587 8.914 13.9167 7.724 17.498 7.724C19.6513 7.724 21.6347 8.234 23.448 9.254C25.284 10.2513 26.712 11.6113 27.732 13.334L23.686 15.68C23.0967 14.6147 22.258 13.7873 21.17 13.198C20.082 12.586 18.858 12.28 17.498 12.28C15.186 12.28 13.316 13.0053 11.888 14.456C10.4827 15.9067 9.78 17.788 9.78 20.1C9.78 22.3893 10.4827 24.2593 11.888 25.71C13.316 27.1607 15.186 27.886 17.498 27.886C18.858 27.886 20.082 27.5913 21.17 27.002C22.2807 26.39 23.1193 25.5627 23.686 24.52L27.732 26.866C26.712 28.5887 25.2953 29.96 23.482 30.98C21.6687 31.9773 19.674 32.476 17.498 32.476ZM47.4467 8.2V12.688H41.0207V32H36.3287V12.688H29.9367V8.2H47.4467ZM69.9207 28.906C67.518 31.286 64.594 32.476 61.1487 32.476C57.7034 32.476 54.7794 31.286 52.3767 28.906C49.9967 26.5033 48.8067 23.568 48.8067 20.1C48.8067 16.632 49.9967 13.708 52.3767 11.328C54.7794 8.92533 57.7034 7.724 61.1487 7.724C64.594 7.724 67.518 8.92533 69.9207 11.328C72.3234 13.708 73.5247 16.632 73.5247 20.1C73.5247 23.568 72.3234 26.5033 69.9207 28.906ZM55.6747 25.71C57.148 27.1607 58.9727 27.886 61.1487 27.886C63.3247 27.886 65.1494 27.1607 66.6227 25.71C68.096 24.2367 68.8327 22.3667 68.8327 20.1C68.8327 17.8333 68.096 15.9633 66.6227 14.49C65.1494 13.0167 63.3247 12.28 61.1487 12.28C58.9727 12.28 57.148 13.0167 55.6747 14.49C54.2014 15.9633 53.4647 17.8333 53.4647 20.1C53.4647 22.3667 54.2014 24.2367 55.6747 25.71Z"
+                      fill="#E2ECF0"/>
+            </svg>
+        </div>
+        <div class="footer__rights">
+            ©All rights reserved by @VatT&Sergey Inc.
+        </div>
+        <div class="footer__right-content">
+            <div class="footer__right-content__with-us">Мы на связи с вами!</div>
+            <div class="footer__right-content__contacts">
+                <div class="phones__mts">
+                    <div class="header__contacts__mts__num">+375 (29) 898 25 05</div>
+                    <img src="imgs/MTC.png" alt="Значок МТС" class="provider-number">
+                </div>
+                <div class="phones__a1">
+                    <div class="header__contacts__a1__num">+375 (44) 790 91 60</div>
+                    <img src="imgs/A1.png" alt="Значок А1" class="provider-number">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="go-up" id="go-up">
+    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="22" viewBox="0 0 39 22" fill="none">
+        <path opacity="0.8"
+              d="M1.60123 21.1135C2.12865 21.6407 2.8439 21.9369 3.58967 21.9369C4.33544 21.9369 5.05069 21.6407 5.57811 21.1135L19.5 7.19161L33.4219 21.1135C33.9523 21.6258 34.6627 21.9093 35.4002 21.9029C36.1376 21.8965 36.843 21.6007 37.3645 21.0792C37.8859 20.5578 38.1817 19.8524 38.1881 19.1149C38.1945 18.3775 37.9111 17.6671 37.3987 17.1366L21.4884 1.22629C20.961 0.699031 20.2458 0.402832 19.5 0.402832C18.7542 0.402832 18.039 0.699031 17.5115 1.22629L1.60123 17.1366C1.07397 17.664 0.777771 18.3793 0.777771 19.125C0.777771 19.8708 1.07397 20.5861 1.60123 21.1135Z"
+              fill="#E2ECF0"/>
+    </svg>
+</div>
+
+<script src="libs/jquery-3.6.4.min.js"></script>
+<script src="libs/swiper-bundle.min.js"></script>
+<script src="libs/wow.min.js"></script>
+<script src="scripts/index.js"></script>
+</body>
+</html>
