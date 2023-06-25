@@ -1,11 +1,5 @@
 (function () {
     const StoAnti = {
-        galleryPoint: null,
-        galleryImage: null,
-        galleryPrev: null,
-        galleryNext: null,
-        galleryCount: 0,
-
         feedbackPoint: null,
         feedbackCard1: null,
         feedbackCards: null,
@@ -24,16 +18,7 @@
             this.burger();
             this.scroll();
             this.numberMask();
-
-            //скрипт анимации при скроле
-            let wow = new WOW({
-                boxClass: 'wow',
-                animateClass: 'animate__animated',
-                offset: 200,
-                mobile: true,
-                live: true
-            })
-            wow.init();
+            this.wow();
 
         },
         //Слайдер отзывов
@@ -78,7 +63,6 @@
         //Слайдер фотографий
         gallerySlider() {
             new Swiper('.mySwiper', {
-
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
@@ -165,6 +149,17 @@
             $.mask.definitions['9'] = false;
             $.mask.definitions['2'] = "[0-9]";
             $(".number").mask("+375 (22) 222-22-22");
+        },
+        //анимация при скроле
+        wow() {
+            let wow = new WOW({
+                boxClass: 'wow',
+                animateClass: 'animate__animated',
+                offset: 200,
+                mobile: true,
+                live: true
+            })
+            wow.init();
         }
     }
 
