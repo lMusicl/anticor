@@ -37,17 +37,27 @@ body {
     background: #1E3044;
 }
 
-
-
 .phones__mts {
     display: flex;
     margin-bottom: 5px;
     font-size: 14px;
+    align-items: center;
+}
+
+.phones__mts svg {
+    width: 14px;
+    height: 19px;
+    margin-left: 10px;
 }
 
 .phones__a1 {
     display: flex;
     font-size: 14px;
+}
+
+.phones__a1 img {
+    width: 14px;
+    height: 16px;
 }
 
 .provider-number {
@@ -981,17 +991,12 @@ input[type=radio] {
     margin-bottom: 35px;
 }
 
-.map__address__graphic {
-
-}
-
 .map__address__post-title {
     font-family: 'Gilroy-Medium', sans-serif;
     font-weight: 600;
     font-size: 20px;
     color: #E2ECF0;
-    margin-left: 45px;
-    margin-bottom: 5px;
+    margin: 10px 0 5px 45px;
 }
 
 .map-text  {
@@ -999,7 +1004,16 @@ input[type=radio] {
     font-size: 14px;
     color: #E2ECF0;
     margin-left: 45px;
-    margin-bottom: 10px;
+    width: 158px;
+    line-height: 120%;
+}
+
+.map__address__phones__mts__num, .map__address__phones__a1__num {
+    width: 120px;
+}
+
+.map__address__address__text {
+    width: 213px;
 }
 
 
