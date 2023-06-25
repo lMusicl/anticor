@@ -19,6 +19,7 @@
             this.scroll();
             this.numberMask();
             this.wow();
+            this.sendMessage();
 
         },
         //Слайдер отзывов
@@ -160,6 +161,25 @@
                 live: true
             })
             wow.init();
+        },
+        //Отправка письма на почту
+        sendMessage() {
+            //E-mail Ajax Send
+            $(".footer-form").submit(function() { //Change
+                let th = $(this);
+                $.ajax({
+                    type: "POST",
+                    url: "mail.php", //Change
+                    data: th.serialize()
+                }).done(function() {
+                    alert("Thank you!");
+                    setTimeout(function() {
+                        // Done Functions
+                        th.trigger("reset");
+                    }, 1000);
+                });
+                return false;
+            });
         }
     }
 

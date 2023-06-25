@@ -861,10 +861,21 @@ input[type=radio] {
     gap: 80px;
 }
 
-.form__main__main__fields {
-    display: flex;
+.footer-form {
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 180px;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
+    column-gap: 80px;
+}
+
+.name {
+    grid-row: 1/2;
+}
+
+.number {
+    grid-row: 2/3;
 }
 
 .input {
@@ -904,6 +915,7 @@ input[type=radio] {
     box-sizing: border-box;
     padding: 0 50px;
     transition: 300ms;
+    grid-row: 1/3;
 }
 
 .form__main__main__button__btn:hover {

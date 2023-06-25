@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -670,13 +670,18 @@
                             class="text__another-color">перезвоним!</span>
                     </div>
                     <div class="form__main__main">
-                        <div class="form__main__main__fields">
-                            <input placeholder="Ваше имя" type="text" class="input name">
-                            <input placeholder="Ваш номер" type="text" class="input number" id="number">
-                        </div>
-                        <div class="form__main__main__button">
-                            <button type="button" class="form__main__main__button__btn">Заказать звонок</button>
-                        </div>
+                        <form class="footer-form">
+                            <!-- Hidden Required Fields -->
+                            <input type="hidden" name="project_name" value="СТО Антикор">
+                            <input type="hidden" name="admin_email" value="dmezhenskij@yandex.ru">
+                            <input type="hidden" name="form_subject" value="Footer form">
+                            <!-- END Hidden Required Fields -->
+                            <label for="name"></label>
+                            <input name="Имя" placeholder="Ваше имя" type="text" class="input name" id="name" required>
+                            <label for="number"></label>
+                            <input name="Номер телефона" placeholder="Ваш номер" type="text" class="input number" id="number" required>
+                            <button type="submit" class="form__main__main__button__btn">Заказать звонок</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -690,38 +695,38 @@
         <div class="container">
             <div class="photo__title wow animate__fadeIn">Наша фотогалерея</div>
             <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="imgs/gallery/1.png" alt="Пример работы">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="imgs/gallery/2.png" alt="Пример работы">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="imgs/gallery/3.png" alt="Пример работы">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="imgs/gallery/4.png" alt="Пример работы">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="imgs/gallery/5.png" alt="Пример работы">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="imgs/gallery/6.png" alt="Пример работы">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="imgs/gallery/7.png" alt="Пример работы">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="imgs/gallery/8.png" alt="Пример работы">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="imgs/gallery/9.png" alt="Пример работы">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="imgs/gallery/10.png" alt="Пример работы">
-                        </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="imgs/gallery/1.png" alt="Пример работы">
                     </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/gallery/2.png" alt="Пример работы">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/gallery/3.png" alt="Пример работы">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/gallery/4.png" alt="Пример работы">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/gallery/5.png" alt="Пример работы">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/gallery/6.png" alt="Пример работы">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/gallery/7.png" alt="Пример работы">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/gallery/8.png" alt="Пример работы">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/gallery/9.png" alt="Пример работы">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/gallery/10.png" alt="Пример работы">
+                    </div>
+                </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
