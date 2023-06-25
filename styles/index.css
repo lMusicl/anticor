@@ -600,6 +600,10 @@ input[type=radio] {
     left: calc(50% - 20px);
 }
 
+.slider__points {
+    display: flex;
+    justify-content: center;
+}
 
 /*mechanic__image 5 block --------------------------------------------------------*/
 .mechanic__image {
