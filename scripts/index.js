@@ -77,45 +77,7 @@
 
         //Слайдер фотографий
         gallerySlider() {
-            this.galleryPoint = $('.slider__points__item2');
-            this.galleryImage = $('.gallery-image').eq(0);
-            this.galleryPrev = $('#prev');
-            this.galleryNext = $('#next');
-
-            that = this;
-            for (let i = 0; i < this.galleryPoint.length; i++) {
-                this.galleryPoint[i].addEventListener("click", function() {
-                    that.galleryCount = i;
-                    that.galleryPoint.removeClass("active__point");
-                    that.galleryPoint.eq(i).addClass("active__point");
-                    that.galleryImage.attr("src", "imgs/gallery/" + (i + 1) + ".png");
-                });
-            }
-
-            this.galleryPrev.click(() => {
-                that.galleryPoint.eq(that.galleryCount).removeClass("active__point");
-                if (that.galleryCount === 0) {
-                    that.galleryCount = 9;
-                } else {
-                    that.galleryCount -= 1;
-                }
-                that.galleryPoint.eq(that.galleryCount).addClass("active__point");
-                that.galleryImage.attr("src", "imgs/" + (that.galleryCount + 1) + ".png");
-            })
-
-            this.galleryNext.click(() => {
-                that.galleryPoint.eq(that.galleryCount).removeClass("active__point");
-                if (that.galleryCount === 9) {
-                    that.galleryCount = 0;
-                } else {
-                    that.galleryCount += 1;
-                }
-                that.galleryPoint.eq(that.galleryCount).addClass("active__point");
-                that.galleryImage.attr("src", "imgs/" + (that.galleryCount + 1) + ".png");
-            })
-
-
-            new Swiper('.swiper-container', {
+            new Swiper('.mySwiper', {
 
                 navigation: {
                     nextEl: '.swiper-button-next',
@@ -128,8 +90,9 @@
                     el: '.swiper-pagination',
                     clickable: true,
                 },
-
-
+                autoplay: {
+                    delay: 5000,
+                },
             })
         },
 
