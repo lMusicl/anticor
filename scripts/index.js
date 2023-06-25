@@ -23,6 +23,7 @@
             this.gallerySlider();
             this.burger();
             this.scroll();
+            this.numberMask();
 
             //скрипт анимации при скроле
             let wow = new WOW({
@@ -33,6 +34,7 @@
                 live: true
             })
             wow.init();
+
         },
         //Слайдер отзывов
         feedbackSlider() {
@@ -194,6 +196,13 @@
                 }, 800);
             });
         },
+
+        //маска номера телефона
+        numberMask() {
+            $.mask.definitions['9'] = false;
+            $.mask.definitions['2'] = "[0-9]";
+            $(".number").mask("+375 (22) 222-22-22");
+        }
     }
 
     StoAnti.init();
