@@ -124,8 +124,8 @@
             this.navElement = $('.header__nav-item2');
 
             this.closeElement.click(() => {
+                $('.header__contacts').eq(0).css('display', 'none');
                 $('.header__nav-items2').eq(0).css('display', 'none');
-                $('.header__contact').eq(0).css('display', 'none');
             })
             this.burgerElement.click(() => {
                 $('.header__nav-items2').css('display', 'block');

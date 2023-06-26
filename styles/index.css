@@ -514,7 +514,6 @@ input[type=radio] {
     position: relative;
     padding: 0 0 120px 0;
     min-height: 700px;
-    display: none;
     /*overflow-y: hidden;*/
 }
 
@@ -971,7 +970,9 @@ input[type=radio] {
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-    color: rgba(255, 102, 66, 0.7);
+    color: rgba(255, 102, 66, 0.5);
+    font-size: 30px;
+    font-weight: 1000;
 }
 
 .swiper-button-next:after:hover,
