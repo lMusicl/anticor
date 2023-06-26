@@ -164,24 +164,29 @@
         },
         // Отправка письма на почту
         sendMessage() {
-            //E-mail Ajax Send
-            $(".footer-form").submit(function () { //устанавливаем событие отправки для формы с id=form
-                let th = $(this); //собераем все данные из формы
+            $(".footer-form").submit(function () {
+                let name = $("#name");
+                let number = $("#number");
+                let time = new Date();
 
-                $.ajax({
-                    type: "POST", //Метод отправки
-                    url: "send.php", //путь до php фаила отправителя
-                    data: th.serialize(),
-                    success: function () {
-                        //код в этом блоке выполняется при успешной отправке сообщения
-                        alert("Ваше сообщение отпрвлено!");
-                        setTimeout(function () {
-                            th.trigger("reset");
-                        }, 1000);
-                    }
-                });
-                return false;
-            });
+                if(name.val() && number.val()) {
+                    $.ajax({
+                        type: 'POST',
+                        url: 'send.php',
+                        data: 'name=' + name.val() + '&number=' + number.val() + '&time=' + time.val(),
+                        success: () => {
+                            $('#reservation-sent').show();
+                            $('#reservation-content').hide();
+                        },
+                        error: () => {
+                            $('#reservation-container').hide();
+                            alert('Ошибка заказа обратного звонка!')
+                        }
+                    });
+                } else {
+                    $('#reserve-error').show();
+                }
+            })
         }
     }
 

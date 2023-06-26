@@ -1,23 +1,28 @@
 <?php
+//Проверяем тип запроса
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    //Получаем параметры из js
+    $name = $_POST['name'];
+    $number = $_POST['number'];
+    $time = $_POST['time'];
 
-$name = $_POST['name']
-$number = $_POST['phone']
+    //переменная с содержанием письма
+    $content = $name . ' оставил заявку на обратный звонок ' . $time . '. Номер телефона: ' . $number;
 
-if((isset($name)&&$name!="")&&(isset($number)&&$number!="")){ //Проверка отправилось ли наше поля name и не пустые ли они
-        $to = 'dmezhenskij@yandex.ru'; //Почта получателя, через запятую можно указать сколько угодно адресов
-        $subject = 'Заявка на обратный звонок'; //Загаловок сообщения
-        $message = '
-                <html>
-                    <head>
-                        <title>'.$subject.'</title>
-                    </head>
-                    <body>
-                        <p>Имя: '.$name.'</p>
-                        <p>Телефон: '.$number.'</p>
-                    </body>
-                </html>'; //Текст нащего сообщения можно использовать HTML теги
-        $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
-        $headers .= "From: Отправитель сайт СТО Антикор\r\n"; //Наименование и почта отправителя
-        mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
+    $headers = 'MIME-Version: 1.0' . "\r\n";
+    $headers = 'Content-type: text/html; charset=utf-8' . "\r\n";
+
+    $success = mail("dmezhenskij@yandex.ru", 'Запрос на обратный звонок СТО Антикор', $content, $headers);
+
+    if ($success){
+        http_response_code(200);
+        echo "Письмо отправлено";
+    } else {
+        http_response_code(500);
+        echo "Письмо не отправлено";
+    }
+} else {
+     http_response_code(403);
+     echo "Данный метод запроса не поддерживается сервером";
 }
-?>
+>
