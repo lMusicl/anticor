@@ -11,8 +11,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 
-    mail("dmezhenskij@yandex.ru", 'Запрос на обратный звонок СТО Антикор', $content, $headers);
-    $success =
+    $success = mail("dmezhenskij@yandex.ru", 'Запрос на обратный звонок СТО Антикор', $content, $headers);
+
     if ($success){
         http_response_code(200);
         echo "Письмо отправлено";
