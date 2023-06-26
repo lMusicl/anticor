@@ -32,14 +32,14 @@
 
             that = this;
             for (let i = 0; i < this.feedbackPoint.length; i++) {
-                this.feedbackPoint[i].addEventListener("click", function() {
+                this.feedbackPoint[i].addEventListener("click", function () {
                     that.feedbackCards.eq(that.feedbackCount).removeAttr('checked', 'checked');
                     that.feedbackCount = i;
                     that.feedbackCards.eq(that.feedbackCount).attr('checked', 'checked');
                     that.feedbackPoint.removeClass("active__point");
                     that.feedbackPoint.eq(i).addClass('active__point');
 
-                    });
+                });
             }
 
             this.feedbackCard1.click(() => {
@@ -85,18 +85,18 @@
         scroll() {
             $('#services').on('click', function () {
                 $('html').animate({
-                        scrollTop: $('#service').offset().top
-                    }, 800);
+                    scrollTop: $('#service').offset().top
+                }, 800);
             });
             $('#reviews').on('click', function () {
                 $('html').animate({
-                        scrollTop: $('#feedback').offset().top
-                    }, 800);
+                    scrollTop: $('#feedback').offset().top
+                }, 800);
             });
             $('#contacts').on('click', function () {
                 $('html').animate({
-                        scrollTop: $('#map').offset().top
-                    }, 800);
+                    scrollTop: $('#map').offset().top
+                }, 800);
             });
 
             $('#go-up').on('click', function () {
@@ -122,7 +122,7 @@
             })
 
             for (let i = 0; i < this.navElement.length; i++) {
-                this.navElement[i].addEventListener("click", function() {
+                this.navElement[i].addEventListener("click", function () {
                     $('.header__nav-items2').css('display', 'none');
                     $('.header__contacts').css('display', 'none');
                 });
@@ -162,21 +162,23 @@
             })
             wow.init();
         },
-        //Отправка письма на почту
+        // Отправка письма на почту
         sendMessage() {
             //E-mail Ajax Send
-            $(".footer-form").submit(function() { //Change
-                let th = $(this);
+            $(".footer-form").submit(function () { //устанавливаем событие отправки для формы с id=form
+                let th = $(this); //собераем все данные из формы
+
                 $.ajax({
-                    type: "POST",
-                    url: "mail.php", //Change
-                    data: th.serialize()
-                }).done(function() {
-                    alert("Thank you!");
-                    setTimeout(function() {
-                        // Done Functions
-                        th.trigger("reset");
-                    }, 1000);
+                    type: "POST", //Метод отправки
+                    url: "send.php", //путь до php фаила отправителя
+                    data: th.serialize(),
+                    success: function () {
+                        //код в этом блоке выполняется при успешной отправке сообщения
+                        alert("Ваше сообщение отпрвлено!");
+                        setTimeout(function () {
+                            th.trigger("reset");
+                        }, 1000);
+                    }
                 });
                 return false;
             });

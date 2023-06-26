@@ -670,16 +670,9 @@
                             class="text__another-color">перезвоним!</span>
                     </div>
                     <div class="form__main__main">
-                        <form class="footer-form">
-                            <!-- Hidden Required Fields -->
-                            <input type="hidden" name="project_name" value="СТО Антикор">
-                            <input type="hidden" name="admin_email" value="dmezhenskij@yandex.ru">
-                            <input type="hidden" name="form_subject" value="Footer form">
-                            <!-- END Hidden Required Fields -->
-                            <label for="name"></label>
-                            <input name="Имя" placeholder="Ваше имя" type="text" class="input name" id="name" required>
-                            <label for="number"></label>
-                            <input name="Номер телефона" placeholder="Ваш номер" type="text" class="input number" id="number" required>
+                        <form class="footer-form" action="send.php" method="POST">
+                            <input name="name" placeholder="Ваше имя" type="text" class="input name" id="name" required>
+                            <input name="number" placeholder="Ваш номер" type="text" class="input number" id="number" required>
                             <button type="submit" class="form__main__main__button__btn">Заказать звонок</button>
                         </form>
                     </div>
