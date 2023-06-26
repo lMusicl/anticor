@@ -20,6 +20,7 @@
             this.numberMask();
             this.wow();
             this.sendMessage();
+            this.openForm();
 
         },
         //Слайдер отзывов
@@ -176,24 +177,40 @@
             $(".footer-form").submit(function () {
                 let name = $("#name");
                 let number = $("#number");
+                let th = $(this);
 
                 if(name.val() && number.val()) {
                     $.ajax({
                         type: 'POST',
                         url: 'send.php',
-                        data: 'name=' + name.val() + '&number=' + number.val(),
+                        data: th.serialize(),
+                        // data: 'name=' + name.val() + '&number=' + number.val(),
                         success: () => {
-                            $('#reservation-sent').show();
-                            $('#reservation-content').hide();
+                            $('#success__message').fadeIn(500);
+                            setTimeout(
+                                () => {
+                                    $('#success__message').fadeOut(500);
+                                },
+                                4 * 1000
+                            );
+                            th.trigger("reset");
                         },
                         error: () => {
-                            $('#reservation-container').hide();
                             alert('Ошибка заказа обратного звонка!')
                         }
                     });
                 } else {
                     $('#reserve-error').show();
                 }
+            })
+        },
+        //открытие формы по кнопке/закрытие на крестик
+        openForm() {
+            $('#call_request').on('click', ()=> {
+                $('#form-pop-up').fadeIn(700);
+            })
+            $('#pop-up-close').on('click', ()=> {
+                $('#form-pop-up').fadeOut(300);
             })
         }
     }
