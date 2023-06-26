@@ -1105,9 +1105,7 @@ input[type=radio] {
 }
 
 .go-up {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
     position: fixed;
     width: 70px;
     height: 70px;
@@ -1120,6 +1118,12 @@ input[type=radio] {
     -moz-transition: .3s ease; /* Firefox 4 */
     -o-transition: .3s ease; /* Opera */
     z-index: 10000;
+}
+
+.go-up svg {
+    position: relative;
+    top: calc(50% - 13px);
+    left: calc(50% - 20px);
 }
 
 .go-up:hover {
