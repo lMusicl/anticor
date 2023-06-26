@@ -19,7 +19,8 @@
             this.scroll();
             this.numberMask();
             this.wow();
-            this.sendMessage();
+            this.sendFooterMessage();
+            this.sendPopUpMessage();
             this.openForm();
 
         },
@@ -173,7 +174,7 @@
             wow.init();
         },
         // Отправка письма на почту
-        sendMessage() {
+        sendFooterMessage() {
             $(".footer-form").submit(function () {
                 let name = $("#name");
                 let number = $("#number");
@@ -184,7 +185,6 @@
                         type: 'POST',
                         url: 'send.php',
                         data: th.serialize(),
-                        // data: 'name=' + name.val() + '&number=' + number.val(),
                         success: () => {
                             $('#success__message').fadeIn(500);
                             setTimeout(
@@ -193,6 +193,39 @@
                                 },
                                 4 * 1000
                             );
+                            th.trigger("reset");
+                        },
+                        error: () => {
+                            alert('Ошибка заказа обратного звонка!')
+                        }
+                    });
+                    return false;
+                } else {
+                    alert('Произошла ошибка!');
+                }
+            })
+        },
+
+        sendPopUpMessage() {
+            $("#popUpForm").submit(function () {
+                let name = $("#popup-name");
+                let number = $("#popup-number");
+                let th = $(this);
+
+                if(name.val() && number.val()) {
+                    $.ajax({
+                        type: 'POST',
+                        url: 'send.php',
+                        data: th.serialize(),
+                        success: () => {
+                            $('#success__message').fadeIn(500);
+                            setTimeout(
+                                () => {
+                                    $('#success__message').fadeOut(500);
+                                },
+                                4 * 1000
+                            );
+                            $('#form-pop-up').fadeOut(300);
                             th.trigger("reset");
                         },
                         error: () => {
@@ -215,6 +248,5 @@
             })
         }
     }
-
     StoAnti.init();
 })();
