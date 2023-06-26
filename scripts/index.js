@@ -167,13 +167,12 @@
             $(".footer-form").submit(function () {
                 let name = $("#name");
                 let number = $("#number");
-                let time = new Date();
 
                 if(name.val() && number.val()) {
                     $.ajax({
                         type: 'POST',
                         url: 'send.php',
-                        data: 'name=' + name.val() + '&number=' + number.val() + '&time=' + time.val(),
+                        data: 'name=' + name.val() + '&number=' + number.val(),
                         success: () => {
                             $('#reservation-sent').show();
                             $('#reservation-content').hide();
