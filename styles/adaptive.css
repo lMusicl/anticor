@@ -111,6 +111,10 @@
     .services__points__item__text {
         max-width: 850px;
     }
+
+    .stages__item__text {
+        max-width: 930px;
+    }
 }
 
 @media screen and (max-width: 1070px) {
@@ -229,6 +233,10 @@
     .services__clarify {
         display: none;
     }
+
+    .stages__item__text {
+        max-width: 790px;
+    }
 }
 
 @media screen and (max-width: 857px) {
@@ -237,9 +245,9 @@
         left: -6px;
     }
 
-    .services__points__item__text {
-        max-width: 500px;
-    }
+    /*.services__points__item__text {*/
+    /*    max-width: 500px;*/
+    /*}*/
 
     .photo__slider__photo {
         max-width: 590px;
@@ -258,57 +266,66 @@
         margin-bottom: 10px;
     }
 
-    .map__map {
-        display: block;
-        position: absolute;
-        top: 124px;
-        right: -366px;
-    }
-
-    .map__container {
-        padding: 55px 0 50px 0;
-    }
-
-    .map {
-        background-image: unset;
-        background: #1C2329;
-        background-size: cover;
-        max-width: 1440px;
-        margin: 0 auto 40px auto;
-        min-height: 800px;
-        overflow-x: hidden;
-    }
-
     .map__address {
-        z-index: 5;
-        position: absolute;
-        margin-top: 242px;
-        background: #1C2329;
-        border-radius: 5px;
-        padding: 20px 15px;
-        width: 245px;
-        box-sizing: border-box;
-        left: -4px;
+        top: 50px;
+        left: 50px;
     }
 
-    .map__address__title {
-        display: none;
-    }
+    /*.map__map {*/
+    /*    display: block;*/
+    /*    position: absolute;*/
+    /*    top: 124px;*/
+    /*    right: -366px;*/
+    /*}*/
 
-    .map__address__post-title {
-        font-size: 17px;
-    }
+    /*.map__container {*/
+    /*    padding: 55px 0 50px 0;*/
+    /*}*/
 
-    .map-text {
-        font-size: 12px;
-    }
+    /*.map {*/
+    /*    background-image: unset;*/
+    /*    background: #1C2329;*/
+    /*    background-size: cover;*/
+    /*    max-width: 1440px;*/
+    /*    margin: 0 auto 40px auto;*/
+    /*    min-height: 800px;*/
+    /*    overflow-x: hidden;*/
+    /*}*/
 
-    .map__second__title {
-        display: block;
-    }
+    /*.map__address {*/
+    /*    z-index: 5;*/
+    /*    position: absolute;*/
+    /*    margin-top: 242px;*/
+    /*    background: #1C2329;*/
+    /*    border-radius: 5px;*/
+    /*    padding: 20px 15px;*/
+    /*    width: 245px;*/
+    /*    box-sizing: border-box;*/
+    /*    left: -4px;*/
+    /*}*/
+
+    /*.map__address__title {*/
+    /*    display: none;*/
+    /*}*/
+
+    /*.map__address__post-title {*/
+    /*    font-size: 17px;*/
+    /*}*/
+
+    /*.map-text {*/
+    /*    font-size: 12px;*/
+    /*}*/
+
+    /*.map__second__title {*/
+    /*    display: block;*/
+    /*}*/
 
     .header__contacts {
         display: none;
+    }
+
+    .stages__item__text {
+        max-width: 700px;
     }
 }
 
@@ -320,6 +337,21 @@
 
     .go-up {
         display: none;
+    }
+
+    .stages__item__text {
+        max-width: 528px;
+    }
+
+    .services__points__item__text {
+        max-width: 590px;
+    }
+
+    .go-up {
+        width: 50px;
+        height: 50px;
+        right: 20px;
+        bottom: 20px;
     }
 }
 

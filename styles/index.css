@@ -514,10 +514,12 @@ input[type=radio] {
     position: relative;
     padding: 0 0 120px 0;
     min-height: 700px;
+    display: none;
+    /*overflow-y: hidden;*/
 }
 
 .feedback__container {
-    max-width: 2000px;
+    max-width: 1100px;
 }
 
 .feedback__title {
@@ -1004,6 +1006,7 @@ input[type=radio] {
 
 .map__container {
     overflow-x: hidden;
+    margin: 0 auto;
 }
 
 .map__second__title {
@@ -1152,7 +1155,6 @@ input[type=radio] {
 .form-pop-up {
     padding: 70px 45px;
     display: none;
-    /*display: flex;*/
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
