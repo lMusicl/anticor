@@ -121,7 +121,7 @@
     }
 
     .services__points__item__text, .stages__item__text {
-        max-width: 600px;
+        max-width: 500px;
     }
 
     .services__clarify {
@@ -180,6 +180,21 @@
 }
 
 @media screen and (max-width: 560px) {
+    .what-is-this__short-text {
+        font-size: 14px;
+    }
+
+    .what-is-this__main__item:first-child > .what-is-this__main__item__text {
+        font-size: 14px;
+    }
+
+    .what-is-this__main__item__text {
+        font-size: 14px;
+    }
+    .services__points__item__text, .stages__item__text {
+        max-width: 350px;
+    }
+
     .form-pop-up {
         padding: 50px 28px;
     }
