@@ -357,8 +357,29 @@
 
     .form-pop-up {
         padding: 50px 28px;
-        left: calc(50% - 184px);
-        top: calc(50% - 154px);
+        left: calc(50% - 150px);
+        top: calc(50% - 192px);
+    }
+
+    #popUpForm input {
+        width: 218px;
+        align-self: center;
+        font-size: 15px;
+        padding: 0 0 10px 20px;
+        margin-bottom: 20px;
+    }
+
+    .form-pop-up__close svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .pop-up__form__button {
+        margin-top: 40px;
+    }
+
+    .form-pop-up__title {
+        width: 239px;
     }
 
     .advantages {
