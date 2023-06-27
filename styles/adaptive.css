@@ -180,6 +180,22 @@
 }
 
 @media screen and (max-width: 560px) {
+    .form-pop-up {
+        padding: 50px 28px;
+    }
+    .form-pop-up__title {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .pop-up__form__button {
+        width: 175px;
+        font-size: 14px;
+        padding: 17px 33px;
+        align-self: center;
+
+    }
+
     .header__nav-items {
         display: none;
     }
@@ -282,7 +298,7 @@
     }
 
     .services__points__item__text, .stages__item__text {
-        max-width: 330px;
+        max-width: 270px;
         font-size: 16px;
     }
 
