@@ -250,13 +250,11 @@
 
     .start__right-part {
         position: absolute;
-        left: -15px;
-        right: -15px;
         top: 0;
     }
 
     .start__left-part {
-        margin-top: 640px;
+        margin-top: 440px;
     }
 
     .start__right-part__image {
@@ -264,6 +262,7 @@
     }
 
     .start__right-part__image img {
+        height: 100%;
     }
 
     .what-is-this__short-text {
