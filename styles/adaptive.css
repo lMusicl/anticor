@@ -194,6 +194,21 @@
 }
 
 @media screen and (max-width: 560px) {
+    .start__container {
+        position: relative;
+    }
+
+    .start__right-part {
+        position: absolute;
+        left: -15px;
+        right: -15px;
+        top: 0;
+    }
+
+    .start__left-part {
+        margin-top: 600px;
+    }
+
     .start__right-part__image img{
         width: 100%;
     }
@@ -288,6 +303,10 @@
 }
 
 @media screen and (max-width: 424px) {
+    .start__left-part {
+        margin-top: 490px;
+    }
+
     .burger {
         margin-right: 0;
     }
@@ -546,6 +565,10 @@
 }
 
 @media screen and (max-width: 374px) {
+    .start__left-part {
+        margin-top: 435px;
+    }
+
     .start__right-part__before {
         top: -6%;
         left: 16%;
