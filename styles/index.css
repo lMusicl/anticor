@@ -516,12 +516,10 @@ input[type=radio] {
     position: relative;
     padding: 0 0 120px 0;
     min-height: 700px;
-    display: none;
 }
 
-/*.feedback__container {*/
-/*    max-width: 2000px;*/
-/*}*/
+.feedback__container {
+}
 
 .feedback__title {
     font-family: 'Gilroy-Bold', sans-serif;
@@ -599,7 +597,7 @@ input[type=radio] {
 
 .feedback__slider__points {
     position: absolute;
-    bottom: 110px;
+    bottom: 100px;
     left: calc(50% - 20px);
     display: flex;
 }
