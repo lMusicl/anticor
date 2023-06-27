@@ -1,5 +1,7 @@
 body {
     overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 * {
@@ -516,6 +518,7 @@ input[type=radio] {
     position: relative;
     padding: 0 0 120px 0;
     min-height: 700px;
+    display: none;
 }
 
 .feedback__container {
@@ -678,21 +681,17 @@ input[type=radio] {
 
 .what-is-this__main__item__num {
     position: absolute;
-    background: rgba(255, 102, 66, 0.9);
+    background: rgba(255, 102, 66, 0.8);
     width: 30px;
     height: 30px;
-    border: 1px solid rgba(30, 48, 68, 0.9);
-    color: rgba(30, 48, 68, 0.9);
+    border: 1px solid rgba(30, 48, 68, 0.8);
+    color: rgba(30, 48, 68, 0.8);
     border-radius: 50%;
     text-align: center;
     padding-top: 5px;
-    font-size: 15px;
+    font-size: 17px;
     font-family: 'Gilroy-Bold', sans-serif;
     font-weight: 900;
-}
-
-.what-is-this__main__item__num {
-    position: absolute;
     top: -11px;
     left: -11px;
 }
