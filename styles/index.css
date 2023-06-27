@@ -280,7 +280,7 @@ body {
     right: 42.8%;
     height: 9863px;
     top: 0;
-    background-image: url("../imgs/Vector_1.png");
+    background-image: url("../images/Vector_1.png");
     z-index: -1;
     opacity: 0.5;
 }
@@ -291,7 +291,7 @@ body {
     left: 42.8%;
     height: 9863px;
     top: 0;
-    background-image: url("../imgs/Vector_1.png");
+    background-image: url("../images/Vector_1.png");
     z-index: -1;
     opacity: 0.5;
 }
@@ -302,7 +302,7 @@ body {
     right: 49%;
     height: 9863px;
     top: 0;
-    background-image: url("../imgs/Vector_2.png");
+    background-image: url("../images/Vector_2.png");
     z-index: -1;
     opacity: 0.5;
 }
@@ -313,7 +313,7 @@ body {
     height: 9863px;
     left: 49%;
     top: 0;
-    background-image: url("../imgs/Vector_2.png");
+    background-image: url("../images/Vector_2.png");
     z-index: -1;
     opacity: 0.5;
 }
@@ -470,55 +470,11 @@ body {
 
 
 /*feedback 4 block --------------------------------------------------------*/
-input[type=radio] {
-    display: none;
-}
-
-.card {
-    position: absolute;
-    width: 60%;
-    height: 100%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transition: transform 0.5s ease;
-    cursor: pointer;
-}
-
-.cards {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 20px;
-}
-
-#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
-    transform: translateX(-75%) scale(0.65);
-    filter: blur(7.5px);
-    z-index: 0;
-}
-
-#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
-    transform: translateX(75%) scale(0.65);
-    z-index: 0;
-    filter: blur(7.5px);
-}
-
-#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
-    transform: translateY(40px) scale(1);
-    z-index: 1;
-    filter: unset;
-}
 
 .feedback {
     position: relative;
     padding: 0 0 120px 0;
     min-height: 700px;
-    /*overflow-y: hidden;*/
-}
-
-.feedback__container {
-    max-width: 1100px;
 }
 
 .feedback__title {
@@ -530,85 +486,9 @@ input[type=radio] {
     margin-bottom: 50px;
 }
 
-.feedback__cards {
-    display: flex;
-    justify-content: center;
-}
-
-.feedback__cards__item {
-    width: 588px;
-    box-sizing: border-box;
-    background: rgba(255, 102, 66, 0.9);
-    border-radius: 30px;
-    padding: 50px 78px 34px 78px;
-    margin: 0 auto 18px auto;
-}
-
-.feedback__cards__item__name {
-    font-family: 'Gilroy-Bold', sans-serif;
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 120%;
-    text-align: center;
-    color: #1E3044;
-    margin-bottom: 20px;
-}
-
-.feedback__cards__item__hr {
-    width: 228px;
-    margin: 0 auto;
-    border: 1.5px solid #1E3044;
-}
-
-.feedback__cards__item__date {
-    opacity: 0.7;
-    margin-top: 20px;
-    font-family: 'Gilroy-Bold', sans-serif;
-    font-weight: 700;
-    font-size: 10px;
-    line-height: 120%;
-    color: #1E3044;
-    margin-left: 14px;
-    margin-bottom: 10px;
-}
-
-.feedback__cards__item__text {
-    font-family: 'Gilroy-Regular', sans-serif;
-    min-height: 174px;
-    font-size: 18px;
-    line-height: 120%;
-    color: #1E3044;
-
-}
-
-.feedback__cards__item__info {
-    opacity: 0.7;
-    font-family: 'Gilroy-Regular', sans-serif;
-    font-size: 10px;
-    line-height: 120%;
-    text-align: right;
-    color: #1E3044;
-}
-
-.feedback__cards__item__stars {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.feedback__slider__points {
-    position: absolute;
-    bottom: 125px;
-    left: calc(50% - 20px);
-}
-
-.slider__points {
-    display: flex;
-    justify-content: center;
-}
-
 /*mechanic__image 5 block --------------------------------------------------------*/
 .mechanic__image {
-    background-image: url("../imgs/mechanic.png");
+    background-image: url("../images/mechanic.png");
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
@@ -648,6 +528,7 @@ input[type=radio] {
     background: rgba(255, 102, 66, 0.9);
     border-radius: 30px;
     padding: 30px;
+    position: relative;
 }
 
 .what-is-this__main__item:first-child {
@@ -693,20 +574,12 @@ input[type=radio] {
     font-weight: 900;
 }
 
-.what-is-this__main__item:first-child .what-is-this__main__item__num {
+.what-is-this__main__item__num {
+    position: absolute;
     top: -11px;
     left: -11px;
 }
 
-.what-is-this__main__item:nth-child(2) .what-is-this__main__item__num {
-    top: -11px;
-    right: 674px;
-}
-
-.what-is-this__main__item:nth-child(3) .what-is-this__main__item__num {
-    bottom: 104px;
-    right: 674px;
-}
 
 .what-is-this__short {
     margin: 40px 0;
@@ -961,23 +834,31 @@ input[type=radio] {
 .swiper-button-next, .swiper-rtl .swiper-button-prev{
     right: 1px !important;
     left: auto;
+    width: 50px;
+    height: 50px;
 }
 .swiper-button-prev, .swiper-rtl .swiper-button-next{
     left: 1px !important;
     right: auto;
+    width: 50px;
+    height: 50px;
 }
 
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-    color: rgba(255, 102, 66, 0.5);
-    font-size: 30px;
-    font-weight: 1000;
+    display: none;
 }
 
-.swiper-button-next:after:hover,
-.swiper-button-prev:after:hover {
-    color: #1E3044;
+.swiper-button-next svg path,
+.swiper-button-prev svg path{
+    stroke: #FF6642;
+    transition: all 300ms ease;
+}
+
+.swiper-button-next:hover svg path,
+.swiper-button-prev:hover svg path{
+    stroke: #1E3044;
 }
 
 :root {
