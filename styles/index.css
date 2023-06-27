@@ -9,6 +9,11 @@ html, body {
     box-sizing: border-box;
 }
 
+input:not([type="radio"]):not([type="checkbox"]) {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;

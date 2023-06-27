@@ -51,14 +51,14 @@
         margin-top: 20px;
     }
 
-    .what-is-this__main__item {
-        padding: 47px;
-    }
+    /*.what-is-this__main__item {*/
+    /*    padding: 47px;*/
+    /*}*/
 
-    .what-is-this__main__item:first-child {
-        grid-row: unset;
-        padding: 47px;
-    }
+    /*.what-is-this__main__item:first-child {*/
+    /*    grid-row: unset;*/
+    /*    padding: 47px;*/
+    /*}*/
 
     .what-is-this__main__item:nth-child(2) {
         grid-row: unset;
@@ -106,6 +106,10 @@
         display: none;
     }
 
+    .start {
+        padding-top: 10px;
+    }
+
     .start__container {
         flex-direction: column;
         justify-content: center;
@@ -114,7 +118,7 @@
 
     .start__left-part__title {
         font-size: 30px;
-        margin-top: 70px;
+        margin-top: 30px;
     }
 
     .start__left-part__text {
@@ -226,11 +230,43 @@
     }
 
     .what-is-this__main {
-        grid-template-rows: 200px 1fr 160px;
+        grid-template-rows: 300px 1fr 225px;
     }
 }
 
 @media screen and (max-width: 560px) {
+
+    .input {
+        width: 345px;
+    }
+
+    .stages__items {
+        gap: 30px;
+    }
+
+    .stages__block, .services__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stages__item__circle {
+        margin-right: 25px;
+    }
+
+    .what-is-this__main__item__num {
+        font-size: 13px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .what-is-this__short-text {
+        line-height: 120%;
+    }
+
+    .what-is-this__main {
+        grid-template-rows: 220px 1fr 146px;
+    }
     .start {
         padding-top: 30px;
         padding-bottom: 40px;
@@ -245,16 +281,11 @@
     }
 
     .start__left-part__title {
-        margin-top: 0;
-    }
-
-    .start__right-part {
-        position: absolute;
-        top: 0;
+        margin-top: 30px;
     }
 
     .start__left-part {
-        margin-top: 440px;
+        margin-top: 0;
     }
 
     .start__right-part__image {
@@ -281,13 +312,26 @@
         max-width: 350px;
     }
 
+    .what-is-this__title {
+        line-height: 115%;
+        max-width: 345px;
+        font-size: 30px;
+        align-self: center;
+    }
+
     .form-pop-up {
         padding: 50px 28px;
         left: calc(50% - 184px);
         top: calc(50% - 154px);
     }
 
+    .advantages {
+        padding: 80px 0;
+    }
 
+    .advantages__title {
+        line-height: 110%;
+    }
 
     .form-pop-up__title {
         font-size: 20px;
@@ -350,20 +394,25 @@
     }
 
     .start__right-part__after {
-        right: 9%;
+        right: 0;
         top: -6%;
     }
 
     .start__right-part__before {
         top: -6%;
-        left: 9%;
+        left: 0;
+    }
+
+    .services__points__item__circle {
+        margin-right: 25px;
+    }
+
+    .form__main__title {
+        max-width: 345px;
     }
 }
 
 @media screen and (max-width: 424px) {
-    .start__left-part {
-        margin-top: 490px;
-    }
 
     .burger {
         margin-right: 0;
@@ -380,11 +429,11 @@
     }
 
     .start__right-part__before {
-        left: 13%;
+        left: 6%;
     }
 
     .start__right-part__after {
-        right: 13%;
+        right: 6%;
     }
 
     .start {
@@ -407,6 +456,7 @@
 
     .advantages__cards__item__text__body {
         font-size: 14px;
+        max-width: 225px;
     }
 
     .services__title {
@@ -448,8 +498,12 @@
         font-size: 30px;
     }
 
-    .what-is-this__main__item, .what-is-this__main__item:first-child, .what-is-this__short-text {
-        padding: 33px 26px;
+    .what-is-this__main__item, .what-is-this__short-text {
+        padding: 33px 25px;
+    }
+
+    .what-is-this__main__item:first-child {
+        padding: 47px 25px;
     }
 
 
@@ -462,7 +516,7 @@
     }
 
     .what-is-this__main {
-        grid-template-rows: 200px 255px 140px;
+        grid-template-rows: 220px 264px 146px;
         gap: 30px;
     }
 
@@ -623,16 +677,16 @@
 
 @media screen and (max-width: 374px) {
     .start__left-part {
-        margin-top: 435px;
+        margin-top: 400px;
     }
 
     .start__right-part__before {
         top: -6%;
-        left: 16%;
+        left: 6%;
     }
 
     .start__right-part__after {
-        right: 13%;
+        right: 3%;
     }
 
     .services__points__item__text, .stages__item__text {
