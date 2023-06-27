@@ -3,6 +3,10 @@ html, body {
     overflow-y: scroll;
 }
 
+body {
+    font-family: "Gilroy-Regular", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
