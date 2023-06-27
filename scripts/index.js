@@ -127,18 +127,18 @@
             this.navElement = $('.header__nav-item2');
 
             this.closeElement.click(() => {
-                $('.header__contacts').eq(0).css('display', 'none');
+                $('.header__burger-contacts').eq(0).css('display', 'none');
                 $('.header__nav-items2').eq(0).css('display', 'none');
             })
             this.burgerElement.click(() => {
                 $('.header__nav-items2').css('display', 'block');
-                $('.header__contacts').css('display', 'block');
+                $('.header__burger-contacts').css('display', 'block');
             })
 
             for (let i = 0; i < this.navElement.length; i++) {
                 this.navElement[i].addEventListener("click", function () {
                     $('.header__nav-items2').css('display', 'none');
-                    $('.header__contacts').css('display', 'none');
+                    $('.header__burger-contacts').css('display', 'none');
                 });
             }
 

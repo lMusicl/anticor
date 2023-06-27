@@ -75,9 +75,6 @@ body {
     justify-content: space-between;
 }
 
-.header__logo {
-}
-
 .header__nav-items {
     display: flex;
     justify-content: space-between;
@@ -121,6 +118,7 @@ body {
     border-bottom: 1px solid #E2ECF0;
     text-align: center;
     color: #E2ECF0;
+    width: 100%;
 }
 
 .header__nav-item:first-child {
@@ -136,6 +134,11 @@ body {
     font-family: 'Gilroy-Regular', sans-serif;
     font-size: 14px;
     color: #E2ECF0;
+}
+
+.header__burger-contacts {
+    display: none;
+    margin-top: 20px;
 }
 
 .burger {
@@ -1076,7 +1079,8 @@ input[type=radio] {
 .footer__container {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .logo__svg2 {
@@ -1089,6 +1093,8 @@ input[type=radio] {
     font-size: 14px;
     color: rgba(226, 236, 240, 0.59);
     opacity: 0.8;
+    grid-row: 2/3;
+    grid-column: 1/4;
 }
 
 .footer__right-content {
@@ -1098,10 +1104,14 @@ input[type=radio] {
 }
 
 .footer__right-content__with-us {
-    margin-right: 40px;
     font-weight: 250;
     color: rgba(226, 236, 240, 0.75);
     font-size: 14px;
+    justify-self: center;
+}
+
+.footer__right-content__contacts {
+    justify-self: right;
 }
 
 .go-up {
