@@ -17,7 +17,7 @@
 
     .what-is-this__main {
         grid-template-columns: 1fr;
-        grid-template-rows: 196px 1fr 160px;
+        grid-template-rows: 250px 1fr 180px;
         grid-row-gap: 10px;
     }
 
@@ -31,12 +31,12 @@
     }
 
     .what-is-this__main__item {
-        padding: 30px;
+        padding: 47px;
     }
 
     .what-is-this__main__item:first-child {
         grid-row: unset;
-        padding: 30px;
+        padding: 47px;
     }
 
     .what-is-this__main__item:nth-child(2) {
@@ -61,6 +61,10 @@
 
     .mechanic__image {
         height: 450px;
+    }
+
+    .stages__item__text {
+        max-width: 740px;
     }
 }
 
@@ -128,6 +132,10 @@
         display: none;
     }
 
+    .what-is-this__main {
+        grid-template-rows: 285px 1fr 200px;
+    }
+
     .what-is-this__title {
         font-size: 40px;
     }
@@ -179,7 +187,26 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    .start__right-part__before {
+        left: 0;
+        top: -5%;
+    }
+
+    .services__points__item__text, .stages__item__text {
+        max-width: 450px;
+    }
+
+    .what-is-this__main {
+        grid-template-rows: 200px 1fr 160px;
+    }
+}
+
 @media screen and (max-width: 560px) {
+    .start__right-part__image {
+        overflow-x: hidden;
+    }
+
     .what-is-this__short-text {
         font-size: 14px;
     }
@@ -255,7 +282,7 @@
     }
 
     .mechanic__image {
-        height: 350px;
+        height: 300px;
     }
 
     .start__right-part__after {
@@ -274,8 +301,6 @@
         margin-right: 0;
     }
 
-
-
     .start__left-part__title {
         margin-top: 30px;
         font-size: 30px;
@@ -284,6 +309,14 @@
     .start__left-part__text {
         margin-top: 30px;
         font-size: 14px;
+    }
+
+    .start__right-part__before {
+        left: 13%;
+    }
+
+    .start__right-part__after {
+        right: 13%;
     }
 
     .start {
@@ -347,6 +380,12 @@
         font-size: 30px;
     }
 
+    .what-is-this__main__item, .what-is-this__main__item:first-child, .what-is-this__short-text {
+        padding: 33px 26px;
+    }
+
+
+
     .what-is-this__main__item:first-child > .what-is-this__main__item__text {
         font-size: 14px;
     }
@@ -355,13 +394,8 @@
         font-size: 14px;
     }
 
-    .what-is-this__main__item:first-child {
-        padding: 47px;
-    }
-
     .what-is-this__main {
-        grid-template-columns: 1fr;
-        grid-template-rows: 220px 264px 146px;
+        grid-template-rows: 200px 255px 140px;
         gap: 30px;
     }
 
