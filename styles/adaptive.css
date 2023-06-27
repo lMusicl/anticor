@@ -263,6 +263,46 @@
         width: 122px;
     }
 
+    .map__second__title {
+        display: block;
+        margin-bottom: 30px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .map__address__title {
+        display: none;
+    }
+
+    .map__address {
+        left: 0;
+        width: 165px;
+        padding: 25px 15px 25px 15px;
+    }
+
+    .map__address__post-title {
+        font-size: 16px;
+        margin: 0 0 3px 0;
+    }
+
+    .map-text {
+        margin: 0 0 15px 0;
+        font-size: 12px;
+        width: 135px;
+    }
+
+    .map__address__address .map-text {
+        margin: 0;
+    }
+
+    .map__map iframe {
+        height: 300px;
+    }
+
+    .map__address__phones__mts__num {
+        margin: 0;
+    }
+
     .map {
         padding: 40px 0;
     }
@@ -643,46 +683,6 @@
 
     .mySwiper {
         height: 215px;
-    }
-
-    .map__second__title {
-        display: block;
-        margin-bottom: 30px;
-        text-align: center;
-        letter-spacing: 1px;
-    }
-
-    .map__address__title {
-        display: none;
-    }
-
-    .map__address {
-        left: 0;
-        width: 165px;
-        padding: 25px 15px 25px 15px;
-    }
-
-    .map__address__post-title {
-        font-size: 16px;
-        margin: 0 0 3px 0;
-    }
-
-    .map-text {
-        margin: 0 0 15px 0;
-        font-size: 12px;
-        width: 135px;
-    }
-
-    .map__address__address .map-text {
-        margin: 0;
-    }
-
-    .map__map iframe {
-        height: 300px;
-    }
-
-    .map__address__phones__mts__num {
-        margin: 0;
     }
 
     .footer {
