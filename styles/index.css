@@ -497,7 +497,6 @@ input:not([type="radio"]):not([type="checkbox"]) {
 
 .feedback__slider {
     position: relative;
-    display: none;
 }
 
 .slick-track {
