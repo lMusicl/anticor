@@ -696,7 +696,7 @@ input[type=radio] {
     color: rgba(30, 48, 68, 0.8);
     border-radius: 50%;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 4px;
     font-size: 17px;
     font-family: 'Gilroy-Bold', sans-serif;
     font-weight: 900;

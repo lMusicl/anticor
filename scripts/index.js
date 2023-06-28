@@ -24,6 +24,7 @@
             this.sendFooterMessage();
             this.sendPopUpMessage();
             this.openForm();
+            $("img.lazyload").lazyload();
 
         },
         //Слайдер отзывов
