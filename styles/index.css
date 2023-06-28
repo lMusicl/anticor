@@ -1,9 +1,6 @@
 body {
     overflow-x: hidden;
     overflow-y: scroll;
-}
-
-body {
     font-family: "Gilroy-Regular", sans-serif;
 }
 
@@ -454,6 +451,7 @@ input:not([type="radio"]):not([type="checkbox"]) {
 
 .feedback {
     padding-bottom: 120px;
+    overflow-x: hidden;
 }
 
 .feedback__container{
@@ -469,7 +467,9 @@ input:not([type="radio"]):not([type="checkbox"]) {
 
 .slick-track {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
+    overflow-x: hidden;
+    height: 100%;
 }
 
 .slick-list {
