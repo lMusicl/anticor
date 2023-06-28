@@ -134,6 +134,7 @@
 
     .slick-list {
         height: 225px;
+        overflow: hidden;
     }
 
     .feedback__title {
