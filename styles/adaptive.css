@@ -332,6 +332,11 @@
 }
 
 @media screen and (max-width: 560px) {
+    .what-is-this__short {
+        margin: 20px 0;
+        font-size: 30px;
+    }
+
     .footer__container {
         grid-template-columns: 118px 1fr;
     }
@@ -372,7 +377,7 @@
     }
 
     .services__points__item__text, .stages__item__text {
-        max-width: 300px;
+        max-width: 290px;
     }
 
 
@@ -752,17 +757,9 @@
         font-size: 13px;
     }
 
-    .what-is-this__short {
-        margin: 20px 0;
-        font-size: 30px;
-    }
-
     .what-is-this__short-text {
         font-size: 17px;
     }
-
-
-
 
     .stages__block {
         margin-bottom: 50px;
