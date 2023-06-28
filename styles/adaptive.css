@@ -1,8 +1,19 @@
+@media screen and (max-width: 1350px) {
+    .slick-list {
+        width: 800px;
+    }
+}
+
 @media screen and (max-width: 1160px) {
     .services__points__item__text, .stages__item__text {
         max-width: 950px;
     }
+
+    .slick-list {
+        width: 700px;
+    }
 }
+
 
 @media screen and (max-width: 1023px) {
 
@@ -102,16 +113,71 @@
         bottom: -123px;
     }
 
-    .feedback__slider__points {
-        bottom: -440px;
-    }
-
     .stages__item__text, .services__points__item__text {
         max-width: 675px;
     }
 }
 
 @media screen and (max-width: 767px) {
+    .slick-dots button {
+        width: 7px;
+        height: 7px;
+    }
+
+    .slick-dots li {
+        margin: 0 4px;
+    }
+
+    .feedback {
+        padding-bottom: 80px;
+    }
+
+    .slick-list {
+        height: 225px;
+    }
+
+    .feedback__title {
+        font-size: 30px;
+        width: 224px;
+        margin-bottom: 20px;
+    }
+
+    .feedback__slider-element.slick-center {
+        transform: translateY(10px) scale(1);
+    }
+
+    .feedback__slider__item {
+        width: 300px;
+        padding: 20px 40px;
+    }
+
+    .feedback__slider__item__name {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .feedback__slider__item__hr {
+        width: 116px;
+    }
+
+    .feedback__slider__item__date {
+        font-size: 6px;
+        margin: 10px 0 5px 10px;
+    }
+
+    .feedback__slider__item__text {
+        font-size: 9px;
+        min-height: 75px;
+    }
+
+    .feedback__slider__item__info {
+        font-size: 6px;
+    }
+
+    .feedback__slider__item__stars {
+        margin-top: 5px;
+    }
+
     .phones__mts svg, .provider-number {
         margin-left: 5px;
     }
