@@ -561,6 +561,7 @@ input:not([type="radio"]):not([type="checkbox"]) {
     width: 250px;
     background-color: transparent;
     border: 0;
+    overflow: hidden;
 }
 
 .slick-arrow.slick-prev {
