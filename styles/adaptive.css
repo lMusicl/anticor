@@ -742,10 +742,6 @@
 }
 
 @media screen and (max-width: 374px) {
-    .start__left-part {
-        margin-top: 400px;
-    }
-
     .start__right-part__before {
         top: -6%;
         left: 6%;
