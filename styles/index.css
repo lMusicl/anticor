@@ -484,25 +484,6 @@ input:not([type="radio"]):not([type="checkbox"]) {
 
 /*feedback 4 block --------------------------------------------------------*/
 
-
-/*#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {*/
-/*    transform: translateX(-75%) scale(0.65);*/
-/*    filter: blur(7.5px);*/
-/*    z-index: 0;*/
-/*}*/
-
-/*#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {*/
-/*    transform: translateX(75%) scale(0.65);*/
-/*    z-index: 0;*/
-/*    filter: blur(7.5px);*/
-/*}*/
-
-/*#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {*/
-/*    transform: translateY(40px) scale(1);*/
-/*    z-index: 1;*/
-/*    filter: unset;*/
-/*}*/
-
 .feedback {
     padding-bottom: 120px;
 }
@@ -516,6 +497,7 @@ input:not([type="radio"]):not([type="checkbox"]) {
 
 .feedback__slider {
     position: relative;
+    display: none;
 }
 
 .slick-track {

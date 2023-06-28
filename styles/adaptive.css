@@ -14,7 +14,6 @@
     }
 }
 
-
 @media screen and (max-width: 1023px) {
 
     #item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
@@ -67,15 +66,6 @@
     .form__main__title {
         margin-top: 20px;
     }
-
-    /*.what-is-this__main__item {*/
-    /*    padding: 47px;*/
-    /*}*/
-
-    /*.what-is-this__main__item:first-child {*/
-    /*    grid-row: unset;*/
-    /*    padding: 47px;*/
-    /*}*/
 
     .what-is-this__main__item:nth-child(2) {
         grid-row: unset;
@@ -342,8 +332,60 @@
 }
 
 @media screen and (max-width: 560px) {
+    .footer__container {
+        grid-template-columns: 118px 1fr;
+    }
+
+    .map {
+        overflow: hidden;
+    }
+
+    .footer-form {
+        grid-template: 60px 60px 1fr/ 1fr;
+    }
+
+    .stages {
+        padding-bottom: 80px;
+    }
+
+    .stages__clarify {
+        font-size: 17px;
+        padding: 33px 26px;
+    }
+
+    .stages__block-title {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .stages__title {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    .what-is-this {
+        padding: 80px 0;
+    }
+
+    .services {
+        padding-bottom: 80px;
+    }
+
+    .services__points__item__text, .stages__item__text {
+        max-width: 300px;
+    }
+
+
+    .stages__block-title span {
+        display: block;
+    }
+
     .map__address__phones {
         width: 122px;
+    }
+
+    .header__burger-contacts .phones__mts, .header__burger-contacts .phones__a1 {
+        font-size: 20px;
     }
 
     .map__second__title {
@@ -361,6 +403,7 @@
         left: 0;
         width: 165px;
         padding: 25px 15px 25px 15px;
+        border-radius: 0 5px 5px 0;
     }
 
     .map__address__post-title {
@@ -391,7 +434,7 @@
     }
 
     .mySwiper {
-        height: 250px;
+        height: 350px;
         padding-bottom: 30px;
     }
 
@@ -426,6 +469,7 @@
     .what-is-this__main {
         grid-template-rows: 220px 1fr 146px;
     }
+
     .start {
         padding-top: 30px;
         padding-bottom: 40px;
@@ -485,6 +529,10 @@
         top: calc(50% - 192px);
     }
 
+    .form__main__title {
+        font-size: 30px;
+    }
+
     #popUpForm input {
         width: 218px;
         align-self: center;
@@ -496,10 +544,6 @@
     .form-pop-up__close svg {
         width: 14px;
         height: 14px;
-    }
-
-    .pop-up__form__button {
-        margin-top: 40px;
     }
 
     .form-pop-up__title {
@@ -519,11 +563,16 @@
         margin-bottom: 40px;
     }
 
+    .form-pop-up__title {
+        letter-spacing: 0;
+    }
+
     .pop-up__form__button {
         width: 175px;
         font-size: 14px;
-        padding: 17px 33px;
+        padding: 17px 0;
         align-self: center;
+        margin-top: 40px;
     }
 
     .header__nav-items {
@@ -712,37 +761,14 @@
         font-size: 17px;
     }
 
-    .stages__title {
-        font-size: 30px;
-        margin-bottom: 50px;
-    }
 
-    .stages__block-title {
-        font-size: 30px;
-        margin-bottom: 40px;
-    }
+
 
     .stages__block {
         margin-bottom: 50px;
     }
 
-    .stages__clarify {
-        font-size: 17px;
-        padding: 33px 26px;
-    }
 
-    .stages {
-        padding-bottom: 80px;
-    }
-
-    .form__main__title {
-        font-size: 30px;
-    }
-
-    .footer-form {
-        grid-template: 60px 60px 1fr/ 1fr;
-
-    }
 
     .form__main__main__button__btn {
         margin-top: 40px;
@@ -766,7 +792,7 @@
     }
 
     .mySwiper {
-        height: 215px;
+        height: 270px;
     }
 
     .footer {
@@ -794,9 +820,6 @@
         font-size: 10px;
     }
 
-    .footer__container {
-        grid-template-columns: 118px 1fr;
-    }
 
     .footer .container {
         padding: 0;
