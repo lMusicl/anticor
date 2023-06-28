@@ -888,21 +888,20 @@
 }
 
 @media screen and (max-width: 374px) {
+    .services__points__item__text, .stages__item__text {
+        max-width: 230px;
+    }
     .vector {
         height: 9282px;
     }
 
     .start__right-part__before {
         top: -6%;
-        left: 6%;
+        left: 11%;
     }
 
     .start__right-part__after {
-        right: 3%;
-    }
-
-    .services__points__item__text, .stages__item__text {
-        max-width: 260px;
+        right: 12%;
     }
 
     .mechanic__image {
