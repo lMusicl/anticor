@@ -14,7 +14,7 @@
 
         init() {
 
-            // this.feedbackSlider();
+            this.feedbackSlider();
             this.gallerySlider();
             this.feedbackSlider();
             this.burger();
@@ -64,7 +64,6 @@
                     that.feedbackPoint.eq(i).addClass('active__point');
                 });
             }
-
         },
 
         //Слайдер фотографий
@@ -250,7 +249,7 @@
             $('#pop-up-close').on('click', ()=> {
                 $('#form-pop-up').fadeOut(300);
             })
-        }
+        },
     }
     StoAnti.init();
 })();
