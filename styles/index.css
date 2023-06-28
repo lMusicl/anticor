@@ -526,6 +526,7 @@ input[type=radio] {
     position: relative;
     padding: 0 0 120px 0;
     min-height: 700px;
+    display: none;
 }
 
 .feedback__container {
