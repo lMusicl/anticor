@@ -1,7 +1,8 @@
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     overflow-y: scroll;
     font-family: "Gilroy-Regular", sans-serif;
+    position: relative;
 }
 
 * {
@@ -141,6 +142,11 @@ input:not([type="radio"]):not([type="checkbox"]) {
     font-family: 'Gilroy-Regular', sans-serif;
     font-size: 14px;
     color: #E2ECF0;
+}
+
+.header__burger-contacts .phones__a1 img {
+    width: 15px;
+    height: 19px;
 }
 
 .header__burger-contacts {
