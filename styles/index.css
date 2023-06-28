@@ -940,6 +940,7 @@ input[type=radio] {
 .mySwiper {
     max-width: 1200px;
     height: 670px;
+    padding-bottom: 30px;
 }
 
 .swiper-slide{

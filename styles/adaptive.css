@@ -1,3 +1,9 @@
+@media screen and (max-width: 1160px) {
+    .services__points__item__text, .stages__item__text {
+        max-width: 950px;
+    }
+}
+
 @media screen and (max-width: 1023px) {
 
     #item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
@@ -29,7 +35,7 @@
     }
 
     .services__points__item__text, .stages__item__text {
-        max-width: 800px;
+        max-width: 750px;
     }
 
     .what-is-this__main {
@@ -98,6 +104,10 @@
 
     .feedback__slider__points {
         bottom: -440px;
+    }
+
+    .stages__item__text, .services__points__item__text {
+        max-width: 675px;
     }
 }
 
@@ -186,7 +196,7 @@
     }
 
     .services__points__item__text, .stages__item__text {
-        max-width: 500px;
+        max-width: 590px;
     }
 
     .services__clarify {
@@ -230,6 +240,12 @@
 
     .mechanic__image {
         height: 350px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .services__points__item__text, .stages__item__text {
+        max-width: 520px;
     }
 }
 
@@ -385,7 +401,8 @@
     }
 
     .services__points__item__text, .stages__item__text {
-        max-width: 350px;
+        max-width: 320px;
+        font-size: 16px;
     }
 
     .what-is-this__title {
