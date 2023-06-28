@@ -561,6 +561,8 @@
 
     .advantages__title {
         line-height: 110%;
+        font-size: 30px;
+        margin-bottom: 30px;
     }
 
     .form-pop-up__title {
@@ -677,7 +679,6 @@
 
     .advantages__title {
         line-height: 100%;
-        margin-bottom: 30px;
     }
 
     .advantages__cards__item__image svg {
