@@ -15,6 +15,9 @@
 }
 
 @media screen and (max-width: 1023px) {
+    .vector {
+        height: 10723px;
+    }
 
     #item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
         transform: scale(0);
@@ -97,6 +100,10 @@
 }
 
 @media screen and (max-width: 830px) {
+    .vector {
+        height: 11150px;
+    }
+
     .cards {
         position: absolute;
         left: -62px;
@@ -109,6 +116,10 @@
 }
 
 @media screen and (max-width: 767px) {
+    .vector {
+        height: 11200px;
+    }
+
     .slick-dots button {
         width: 7px;
         height: 7px;
@@ -301,12 +312,20 @@
 }
 
 @media screen and (max-width: 670px) {
+    .vector {
+        height: 11529px;
+    }
+
     .services__points__item__text, .stages__item__text {
         max-width: 520px;
     }
 }
 
 @media screen and (max-width: 600px) {
+    .vector {
+        height: 12071px;
+    }
+
     .header__logo svg {
         width: 210px;
     }
@@ -332,6 +351,10 @@
 }
 
 @media screen and (max-width: 560px) {
+    .vector {
+        height: 9000px;
+    }
+
     .what-is-this__short {
         margin: 20px 0;
         font-size: 30px;
@@ -647,6 +670,10 @@
 }
 
 @media screen and (max-width: 424px) {
+    .vector {
+        height: 9124px;
+    }
+
     .burger {
         margin-right: 0;
     }
@@ -767,7 +794,6 @@
     }
 
 
-
     .form__main__main__button__btn {
         margin-top: 40px;
         grid-row: 3/4;
@@ -830,6 +856,10 @@
 }
 
 @media screen and (max-width: 374px) {
+    .vector {
+        height: 9282px;
+    }
+
     .start__right-part__before {
         top: -6%;
         left: 6%;

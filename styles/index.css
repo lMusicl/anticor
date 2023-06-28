@@ -265,92 +265,60 @@ input:not([type="radio"]):not([type="checkbox"]) {
     /*overflow-y: hidden;*/
 }
 
-.vector_1 {
+.vector {
     position: absolute;
-    width: 1px;
-    right: 10.5%;
-    height: 9863px;
-    top: 0;
-    border: 1px solid #E2ECF0;
     z-index: -1;
     opacity: 0.5;
+    top: 0;
+    height: 9979px;
+}
+
+.vector_1 {
+    width: 1px;
+    right: 10.5%;
+    border: 1px solid #E2ECF0;
 }
 
 .vector_2 {
-    position: absolute;
     width: 1px;
     left: 10.5%;
-    height: 9863px;
-    top: 0;
     border: 1px solid #E2ECF0;
-    z-index: -1;
-    opacity: 0.5;
 }
 
 .vector_3 {
-    position: absolute;
     width: 2px;
     right: 42.8%;
-    height: 9863px;
-    top: 0;
     background-image: url("../images/Vector_1.png");
-    z-index: -1;
-    opacity: 0.5;
 }
 
 .vector_4 {
-    position: absolute;
     width: 2px;
     left: 42.8%;
-    height: 9863px;
-    top: 0;
     background-image: url("../images/Vector_1.png");
-    z-index: -1;
-    opacity: 0.5;
 }
 
 .vector_5 {
-    position: absolute;
     width: 2px;
     right: 49%;
-    height: 9863px;
-    top: 0;
     background-image: url("../images/Vector_2.png");
-    z-index: -1;
-    opacity: 0.5;
 }
 
 .vector_6 {
-    position: absolute;
     width: 2px;
-    height: 9863px;
     left: 49%;
-    top: 0;
     background-image: url("../images/Vector_2.png");
-    z-index: -1;
-    opacity: 0.5;
 }
 
 .vector_7 {
-    position: absolute;
     width: 0;
     left: 8.5%;
-    height: 9863px;
-    top: 0;
     border: 1px dashed #E2ECF0;
-    z-index: -1;
-    opacity: 0.5;
 }
 
 .vector_8 {
-    position: absolute;
     width: 1px;
-    height: 9863px;
     right: 8.5%;
-    top: 0;
     border: 1px dashed #E2ECF0;
-    z-index: -1;
-    opacity: 0.5;
 }
 
 /*advantages 2 block --------------------------------------------------------*/
