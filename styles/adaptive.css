@@ -104,6 +104,22 @@
         height: 11150px;
     }
 
+    .vector_1 {
+        right: 48%;
+    }
+
+    .vector_2 {
+        left: 48%;
+    }
+
+    .vector_3, .vector_4, .vector_5, .vector_6 {
+        display: none;
+    }
+
+    .vector_7, .vector_8 {
+        left: 2.5%;
+    }
+
     .cards {
         position: absolute;
         left: -62px;
